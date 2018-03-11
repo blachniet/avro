@@ -5,7 +5,8 @@
         {
           "src": "../",
           "files": [
-            "src/apache/main/**.csproj"
+            "src/apache/main/**.csproj",
+            "src/apache/msbuild/**.csproj"
           ]
         }
       ],
