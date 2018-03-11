@@ -1,0 +1,525 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GenericDatumReader&lt;T&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GenericDatumReader&lt;T&gt;
+   ">
+    <meta name="generator" content="docfx 2.32.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Avro.Generic.GenericDatumReader`1">
+  
+  
+  <h1 id="Avro_Generic_GenericDatumReader_1" data-uid="Avro.Generic.GenericDatumReader`1" class="text-break">Class GenericDatumReader&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Avro.Generic.PreresolvingDatumReader-1.html">PreresolvingDatumReader</a>&lt;T&gt;</div>
+    <div class="level2"><span class="xref">GenericDatumReader&lt;T&gt;</span></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Avro.Generic.DatumReader-1.html">DatumReader</a>&lt;T&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Avro.Generic.PreresolvingDatumReader-1.html#Avro_Generic_PreresolvingDatumReader_1_ReaderSchema">PreresolvingDatumReader&lt;T&gt;.ReaderSchema</a>
+    </div>
+    <div>
+      <a class="xref" href="Avro.Generic.PreresolvingDatumReader-1.html#Avro_Generic_PreresolvingDatumReader_1_WriterSchema">PreresolvingDatumReader&lt;T&gt;.WriterSchema</a>
+    </div>
+    <div>
+      <a class="xref" href="Avro.Generic.PreresolvingDatumReader-1.html#Avro_Generic_PreresolvingDatumReader_1_Read__0_Avro_IO_Decoder_">PreresolvingDatumReader&lt;T&gt;.Read(T, Decoder)</a>
+    </div>
+    <div>
+      <a class="xref" href="Avro.Generic.PreresolvingDatumReader-1.html#Avro_Generic_PreresolvingDatumReader_1_FindBranch_Avro_UnionSchema_Avro_Schema_">PreresolvingDatumReader&lt;T&gt;.FindBranch(UnionSchema, Schema)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Avro.Generic.html">Avro.Generic</a></h6>
+  <h6><strong>Assembly</strong>: Avro.dll</h6>
+  <h5 id="Avro_Generic_GenericDatumReader_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class GenericDatumReader&lt;T&gt; : PreresolvingDatumReader&lt;T&gt;, DatumReader&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_GenericDatumReader_1__ctor_Avro_Schema_Avro_Schema_.md&amp;value=---%0Auid%3A%20Avro.Generic.GenericDatumReader%601.%23ctor(Avro.Schema%2CAvro.Schema)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericDatumReader.cs/#L28">View Source</a>
+  </span>
+  <a id="Avro_Generic_GenericDatumReader_1__ctor_" data-uid="Avro.Generic.GenericDatumReader`1.#ctor*"></a>
+  <h4 id="Avro_Generic_GenericDatumReader_1__ctor_Avro_Schema_Avro_Schema_" data-uid="Avro.Generic.GenericDatumReader`1.#ctor(Avro.Schema,Avro.Schema)">GenericDatumReader(Schema, Schema)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public GenericDatumReader(Schema writerSchema, Schema readerSchema)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.Schema.html">Schema</a></td>
+        <td><span class="parametername">writerSchema</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.Schema.html">Schema</a></td>
+        <td><span class="parametername">readerSchema</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_GenericDatumReader_1_GetArrayAccess_Avro_ArraySchema_.md&amp;value=---%0Auid%3A%20Avro.Generic.GenericDatumReader%601.GetArrayAccess(Avro.ArraySchema)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericDatumReader.cs/#L49">View Source</a>
+  </span>
+  <a id="Avro_Generic_GenericDatumReader_1_GetArrayAccess_" data-uid="Avro.Generic.GenericDatumReader`1.GetArrayAccess*"></a>
+  <h4 id="Avro_Generic_GenericDatumReader_1_GetArrayAccess_Avro_ArraySchema_" data-uid="Avro.Generic.GenericDatumReader`1.GetArrayAccess(Avro.ArraySchema)">GetArrayAccess(ArraySchema)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override PreresolvingDatumReader&lt;T&gt;.ArrayAccess GetArrayAccess(ArraySchema readerSchema)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.ArraySchema.html">ArraySchema</a></td>
+        <td><span class="parametername">readerSchema</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.Generic.PreresolvingDatumReader-1.ArrayAccess.html">PreresolvingDatumReader.ArrayAccess</a>&lt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Avro.Generic.PreresolvingDatumReader&lt;T&gt;.GetArrayAccess(Avro.ArraySchema)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_GenericDatumReader_1_GetEnumAccess_Avro_EnumSchema_.md&amp;value=---%0Auid%3A%20Avro.Generic.GenericDatumReader%601.GetEnumAccess(Avro.EnumSchema)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericDatumReader.cs/#L54">View Source</a>
+  </span>
+  <a id="Avro_Generic_GenericDatumReader_1_GetEnumAccess_" data-uid="Avro.Generic.GenericDatumReader`1.GetEnumAccess*"></a>
+  <h4 id="Avro_Generic_GenericDatumReader_1_GetEnumAccess_Avro_EnumSchema_" data-uid="Avro.Generic.GenericDatumReader`1.GetEnumAccess(Avro.EnumSchema)">GetEnumAccess(EnumSchema)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override PreresolvingDatumReader&lt;T&gt;.EnumAccess GetEnumAccess(EnumSchema readerSchema)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.EnumSchema.html">EnumSchema</a></td>
+        <td><span class="parametername">readerSchema</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.Generic.PreresolvingDatumReader-1.EnumAccess.html">PreresolvingDatumReader.EnumAccess</a>&lt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Avro.Generic.PreresolvingDatumReader&lt;T&gt;.GetEnumAccess(Avro.EnumSchema)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_GenericDatumReader_1_GetFixedAccess_Avro_FixedSchema_.md&amp;value=---%0Auid%3A%20Avro.Generic.GenericDatumReader%601.GetFixedAccess(Avro.FixedSchema)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericDatumReader.cs/#L69">View Source</a>
+  </span>
+  <a id="Avro_Generic_GenericDatumReader_1_GetFixedAccess_" data-uid="Avro.Generic.GenericDatumReader`1.GetFixedAccess*"></a>
+  <h4 id="Avro_Generic_GenericDatumReader_1_GetFixedAccess_Avro_FixedSchema_" data-uid="Avro.Generic.GenericDatumReader`1.GetFixedAccess(Avro.FixedSchema)">GetFixedAccess(FixedSchema)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override PreresolvingDatumReader&lt;T&gt;.FixedAccess GetFixedAccess(FixedSchema readerSchema)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.FixedSchema.html">FixedSchema</a></td>
+        <td><span class="parametername">readerSchema</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.Generic.PreresolvingDatumReader-1.FixedAccess.html">PreresolvingDatumReader.FixedAccess</a>&lt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Avro.Generic.PreresolvingDatumReader&lt;T&gt;.GetFixedAccess(Avro.FixedSchema)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_GenericDatumReader_1_GetMapAccess_Avro_MapSchema_.md&amp;value=---%0Auid%3A%20Avro.Generic.GenericDatumReader%601.GetMapAccess(Avro.MapSchema)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericDatumReader.cs/#L59">View Source</a>
+  </span>
+  <a id="Avro_Generic_GenericDatumReader_1_GetMapAccess_" data-uid="Avro.Generic.GenericDatumReader`1.GetMapAccess*"></a>
+  <h4 id="Avro_Generic_GenericDatumReader_1_GetMapAccess_Avro_MapSchema_" data-uid="Avro.Generic.GenericDatumReader`1.GetMapAccess(Avro.MapSchema)">GetMapAccess(MapSchema)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override PreresolvingDatumReader&lt;T&gt;.MapAccess GetMapAccess(MapSchema readerSchema)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.MapSchema.html">MapSchema</a></td>
+        <td><span class="parametername">readerSchema</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.Generic.PreresolvingDatumReader-1.MapAccess.html">PreresolvingDatumReader.MapAccess</a>&lt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Avro.Generic.PreresolvingDatumReader&lt;T&gt;.GetMapAccess(Avro.MapSchema)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_GenericDatumReader_1_GetRecordAccess_Avro_RecordSchema_.md&amp;value=---%0Auid%3A%20Avro.Generic.GenericDatumReader%601.GetRecordAccess(Avro.RecordSchema)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericDatumReader.cs/#L64">View Source</a>
+  </span>
+  <a id="Avro_Generic_GenericDatumReader_1_GetRecordAccess_" data-uid="Avro.Generic.GenericDatumReader`1.GetRecordAccess*"></a>
+  <h4 id="Avro_Generic_GenericDatumReader_1_GetRecordAccess_Avro_RecordSchema_" data-uid="Avro.Generic.GenericDatumReader`1.GetRecordAccess(Avro.RecordSchema)">GetRecordAccess(RecordSchema)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override PreresolvingDatumReader&lt;T&gt;.RecordAccess GetRecordAccess(RecordSchema readerSchema)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.RecordSchema.html">RecordSchema</a></td>
+        <td><span class="parametername">readerSchema</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.Generic.PreresolvingDatumReader-1.RecordAccess.html">PreresolvingDatumReader.RecordAccess</a>&lt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Avro.Generic.PreresolvingDatumReader&lt;T&gt;.GetRecordAccess(Avro.RecordSchema)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_GenericDatumReader_1_IsReusable_Avro_Schema_Type_.md&amp;value=---%0Auid%3A%20Avro.Generic.GenericDatumReader%601.IsReusable(Avro.Schema.Type)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericDatumReader.cs/#L32">View Source</a>
+  </span>
+  <a id="Avro_Generic_GenericDatumReader_1_IsReusable_" data-uid="Avro.Generic.GenericDatumReader`1.IsReusable*"></a>
+  <h4 id="Avro_Generic_GenericDatumReader_1_IsReusable_Avro_Schema_Type_" data-uid="Avro.Generic.GenericDatumReader`1.IsReusable(Avro.Schema.Type)">IsReusable(Schema.Type)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override bool IsReusable(Schema.Type tag)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.Schema.Type.html">Schema.Type</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Avro.Generic.PreresolvingDatumReader&lt;T&gt;.IsReusable(Avro.Schema.Type)</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Avro.Generic.DatumReader-1.html">DatumReader&lt;T&gt;</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_GenericDatumReader_1.md&amp;value=---%0Auid%3A%20Avro.Generic.GenericDatumReader%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericDatumReader.cs/#L26" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

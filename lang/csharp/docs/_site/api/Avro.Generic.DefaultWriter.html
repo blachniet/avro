@@ -1,0 +1,1252 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DefaultWriter
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DefaultWriter
+   ">
+    <meta name="generator" content="docfx 2.32.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Avro.Generic.DefaultWriter">
+  
+  
+  <h1 id="Avro_Generic_DefaultWriter" data-uid="Avro.Generic.DefaultWriter" class="text-break">Class DefaultWriter
+  </h1>
+  <div class="markdown level0 summary"><p>A General purpose writer for serializing objects into a Stream using
+Avro. This class implements a default way of serializing objects. But
+one can derive a class from this and override different methods to
+acheive results that are different from the default implementation.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DefaultWriter</span></div>
+      <div class="level2"><a class="xref" href="Avro.Specific.SpecificDefaultWriter.html">SpecificDefaultWriter</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Avro.Generic.html">Avro.Generic</a></h6>
+  <h6><strong>Assembly</strong>: Avro.dll</h6>
+  <h5 id="Avro_Generic_DefaultWriter_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DefaultWriter</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultWriter__ctor_Avro_Schema_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultWriter.%23ctor(Avro.Schema)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericWriter.cs/#L71">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultWriter__ctor_" data-uid="Avro.Generic.DefaultWriter.#ctor*"></a>
+  <h4 id="Avro_Generic_DefaultWriter__ctor_Avro_Schema_" data-uid="Avro.Generic.DefaultWriter.#ctor(Avro.Schema)">DefaultWriter(Schema)</h4>
+  <div class="markdown level1 summary"><p>Constructs a generic writer for the given schema.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DefaultWriter(Schema schema)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.Schema.html">Schema</a></td>
+        <td><span class="parametername">schema</span></td>
+        <td><p>The schema for the object to be serialized</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultWriter_Schema.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultWriter.Schema%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericWriter.cs/#L65">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultWriter_Schema_" data-uid="Avro.Generic.DefaultWriter.Schema*"></a>
+  <h4 id="Avro_Generic_DefaultWriter_Schema" data-uid="Avro.Generic.DefaultWriter.Schema">Schema</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Schema Schema { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.Schema.html">Schema</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultWriter_EnsureArrayObject_System_Object_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultWriter.EnsureArrayObject(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericWriter.cs/#L252">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultWriter_EnsureArrayObject_" data-uid="Avro.Generic.DefaultWriter.EnsureArrayObject*"></a>
+  <h4 id="Avro_Generic_DefaultWriter_EnsureArrayObject_System_Object_" data-uid="Avro.Generic.DefaultWriter.EnsureArrayObject(System.Object)">EnsureArrayObject(Object)</h4>
+  <div class="markdown level1 summary"><p>Checks if the given object is an array. If it is a valid array, this function returns normally. Otherwise,
+it throws an exception. The default implementation checks if the value is an array.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void EnsureArrayObject(object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultWriter_EnsureMapObject_System_Object_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultWriter.EnsureMapObject(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericWriter.cs/#L311">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultWriter_EnsureMapObject_" data-uid="Avro.Generic.DefaultWriter.EnsureMapObject*"></a>
+  <h4 id="Avro_Generic_DefaultWriter_EnsureMapObject_System_Object_" data-uid="Avro.Generic.DefaultWriter.EnsureMapObject(System.Object)">EnsureMapObject(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void EnsureMapObject(object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultWriter_EnsureRecordObject_Avro_RecordSchema_System_Object_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultWriter.EnsureRecordObject(Avro.RecordSchema%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericWriter.cs/#L189">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultWriter_EnsureRecordObject_" data-uid="Avro.Generic.DefaultWriter.EnsureRecordObject*"></a>
+  <h4 id="Avro_Generic_DefaultWriter_EnsureRecordObject_Avro_RecordSchema_System_Object_" data-uid="Avro.Generic.DefaultWriter.EnsureRecordObject(Avro.RecordSchema,System.Object)">EnsureRecordObject(RecordSchema, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void EnsureRecordObject(RecordSchema s, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.RecordSchema.html">RecordSchema</a></td>
+        <td><span class="parametername">s</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultWriter_GetArrayElement_System_Object_System_Int64_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultWriter.GetArrayElement(System.Object%2CSystem.Int64)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericWriter.cs/#L279">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultWriter_GetArrayElement_" data-uid="Avro.Generic.DefaultWriter.GetArrayElement*"></a>
+  <h4 id="Avro_Generic_DefaultWriter_GetArrayElement_System_Object_System_Int64_" data-uid="Avro.Generic.DefaultWriter.GetArrayElement(System.Object,System.Int64)">GetArrayElement(Object, Int64)</h4>
+  <div class="markdown level1 summary"><p>Returns the element at the given index from the given array object. The default implementation
+requires that the value is an object array and returns the element in that array. The defaul implementation
+gurantees that EnsureArrayObject() has been called on the value before this
+function is called.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual object GetArrayElement(object value, long index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The array object</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index to look for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The array element at the index</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultWriter_GetArrayLength_System_Object_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultWriter.GetArrayLength(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericWriter.cs/#L265">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultWriter_GetArrayLength_" data-uid="Avro.Generic.DefaultWriter.GetArrayLength*"></a>
+  <h4 id="Avro_Generic_DefaultWriter_GetArrayLength_System_Object_" data-uid="Avro.Generic.DefaultWriter.GetArrayLength(System.Object)">GetArrayLength(Object)</h4>
+  <div class="markdown level1 summary"><p>Returns the length of an array. The default implementation requires the object
+to be an array of objects and returns its length. The defaul implementation
+gurantees that EnsureArrayObject() has been called on the value before this
+function is called.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual long GetArrayLength(object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The object whose array length is required</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><p>The array length of the given object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultWriter_GetField_System_Object_System_String_System_Int32_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultWriter.GetField(System.Object%2CSystem.String%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericWriter.cs/#L205">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultWriter_GetField_" data-uid="Avro.Generic.DefaultWriter.GetField*"></a>
+  <h4 id="Avro_Generic_DefaultWriter_GetField_System_Object_System_String_System_Int32_" data-uid="Avro.Generic.DefaultWriter.GetField(System.Object,System.String,System.Int32)">GetField(Object, String, Int32)</h4>
+  <div class="markdown level1 summary"><p>Extracts the field value from the given object. In this default implementation,
+value should be of type GenericRecord.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual object GetField(object value, string fieldName, int fieldPos)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The record value from which the field needs to be extracted</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fieldName</span></td>
+        <td><p>The name of the field in the record</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">fieldPos</span></td>
+        <td><p>The position of field in the record</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultWriter_GetMapSize_System_Object_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultWriter.GetMapSize(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericWriter.cs/#L323">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultWriter_GetMapSize_" data-uid="Avro.Generic.DefaultWriter.GetMapSize*"></a>
+  <h4 id="Avro_Generic_DefaultWriter_GetMapSize_System_Object_" data-uid="Avro.Generic.DefaultWriter.GetMapSize(System.Object)">GetMapSize(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual long GetMapSize(object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultWriter_GetMapValues_System_Object_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultWriter.GetMapValues(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericWriter.cs/#L335">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultWriter_GetMapValues_" data-uid="Avro.Generic.DefaultWriter.GetMapValues*"></a>
+  <h4 id="Avro_Generic_DefaultWriter_GetMapValues_System_Object_" data-uid="Avro.Generic.DefaultWriter.GetMapValues(System.Object)">GetMapValues(Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual IEnumerable&lt;KeyValuePair&lt;string, object&gt;&gt; GetMapValues(object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Collections.Generic.KeyValuePair</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultWriter_Matches_Avro_Schema_System_Object_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultWriter.Matches(Avro.Schema%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericWriter.cs/#L405">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultWriter_Matches_" data-uid="Avro.Generic.DefaultWriter.Matches*"></a>
+  <h4 id="Avro_Generic_DefaultWriter_Matches_Avro_Schema_System_Object_" data-uid="Avro.Generic.DefaultWriter.Matches(Avro.Schema,System.Object)">Matches(Schema, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool Matches(Schema sc, object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.Schema.html">Schema</a></td>
+        <td><span class="parametername">sc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultWriter_ResolveUnion_Avro_UnionSchema_System_Object_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultWriter.ResolveUnion(Avro.UnionSchema%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericWriter.cs/#L363">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultWriter_ResolveUnion_" data-uid="Avro.Generic.DefaultWriter.ResolveUnion*"></a>
+  <h4 id="Avro_Generic_DefaultWriter_ResolveUnion_Avro_UnionSchema_System_Object_" data-uid="Avro.Generic.DefaultWriter.ResolveUnion(Avro.UnionSchema,System.Object)">ResolveUnion(UnionSchema, Object)</h4>
+  <div class="markdown level1 summary"><p>Finds the branch within the given UnionSchema that matches the given object. The default implementation
+calls Matches() method in the order of branches within the UnionSchema. If nothing matches, throws
+an exception.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int ResolveUnion(UnionSchema us, object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.UnionSchema.html">UnionSchema</a></td>
+        <td><span class="parametername">us</span></td>
+        <td><p>The UnionSchema to resolve against</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object that should be used in matching</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultWriter_TypeMismatch_System_Object_System_String_System_String_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultWriter.TypeMismatch(System.Object%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericWriter.cs/#L389">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultWriter_TypeMismatch_" data-uid="Avro.Generic.DefaultWriter.TypeMismatch*"></a>
+  <h4 id="Avro_Generic_DefaultWriter_TypeMismatch_System_Object_System_String_System_String_" data-uid="Avro.Generic.DefaultWriter.TypeMismatch(System.Object,System.String,System.String)">TypeMismatch(Object, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected AvroException TypeMismatch(object obj, string schemaType, string type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">schemaType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.AvroException.html">AvroException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultWriter_Write_Avro_Schema_System_Object_Avro_IO_Encoder_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultWriter.Write(Avro.Schema%2CSystem.Object%2CAvro.IO.Encoder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericWriter.cs/#L88">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultWriter_Write_" data-uid="Avro.Generic.DefaultWriter.Write*"></a>
+  <h4 id="Avro_Generic_DefaultWriter_Write_Avro_Schema_System_Object_Avro_IO_Encoder_" data-uid="Avro.Generic.DefaultWriter.Write(Avro.Schema,System.Object,Avro.IO.Encoder)">Write(Schema, Object, Encoder)</h4>
+  <div class="markdown level1 summary"><p>Examines the schema and dispatches the actual work to one
+of the other methods of this class. This allows the derived
+classes to override specific methods and get custom results.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public virtual void Write(Schema schema, object value, Encoder encoder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.Schema.html">Schema</a></td>
+        <td><span class="parametername">schema</span></td>
+        <td><p>The schema to use for serializing</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to be serialized</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.IO.Encoder.html">Encoder</a></td>
+        <td><span class="parametername">encoder</span></td>
+        <td><p>The encoder to use during serialization</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultWriter_Write__1___0_Avro_IO_Encoder_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultWriter.Write%60%601(%60%600%2CAvro.IO.Encoder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericWriter.cs/#L76">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultWriter_Write_" data-uid="Avro.Generic.DefaultWriter.Write*"></a>
+  <h4 id="Avro_Generic_DefaultWriter_Write__1___0_Avro_IO_Encoder_" data-uid="Avro.Generic.DefaultWriter.Write``1(``0,Avro.IO.Encoder)">Write&lt;T&gt;(T, Encoder)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write&lt;T&gt;(T value, Encoder encoder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.IO.Encoder.html">Encoder</a></td>
+        <td><span class="parametername">encoder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultWriter_Write__1_System_Object_Avro_Schema_Type_Avro_Generic_Writer___0__.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultWriter.Write%60%601(System.Object%2CAvro.Schema.Type%2CAvro.Generic.Writer%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericWriter.cs/#L158">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultWriter_Write_" data-uid="Avro.Generic.DefaultWriter.Write*"></a>
+  <h4 id="Avro_Generic_DefaultWriter_Write__1_System_Object_Avro_Schema_Type_Avro_Generic_Writer___0__" data-uid="Avro.Generic.DefaultWriter.Write``1(System.Object,Avro.Schema.Type,Avro.Generic.Writer{``0})">Write&lt;S&gt;(Object, Schema.Type, Writer&lt;S&gt;)</h4>
+  <div class="markdown level1 summary"><p>A generic method to serialize primitive Avro types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Write&lt;S&gt;(object value, Schema.Type tag, Writer&lt;S&gt; writer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to be serialized</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.Schema.Type.html">Schema.Type</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>The schema type tag</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.Generic.Writer-1.html">Writer</a>&lt;S&gt;</td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>The writer which should be used to write the given type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">S</span></td>
+        <td><p>Type of the C# type to be serialized</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultWriter_WriteArray_Avro_ArraySchema_System_Object_Avro_IO_Encoder_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultWriter.WriteArray(Avro.ArraySchema%2CSystem.Object%2CAvro.IO.Encoder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericWriter.cs/#L233">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultWriter_WriteArray_" data-uid="Avro.Generic.DefaultWriter.WriteArray*"></a>
+  <h4 id="Avro_Generic_DefaultWriter_WriteArray_Avro_ArraySchema_System_Object_Avro_IO_Encoder_" data-uid="Avro.Generic.DefaultWriter.WriteArray(Avro.ArraySchema,System.Object,Avro.IO.Encoder)">WriteArray(ArraySchema, Object, Encoder)</h4>
+  <div class="markdown level1 summary"><p>Serialized an array. The default implementation calls EnsureArrayObject() to ascertain that the
+given value is an array. It then calls GetArrayLength() and GetArrayElement()
+to access the members of the array and then serialize them.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void WriteArray(ArraySchema schema, object value, Encoder encoder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.ArraySchema.html">ArraySchema</a></td>
+        <td><span class="parametername">schema</span></td>
+        <td><p>The ArraySchema for serialization</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value being serialized</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.IO.Encoder.html">Encoder</a></td>
+        <td><span class="parametername">encoder</span></td>
+        <td><p>The encoder for serialization</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultWriter_WriteEnum_Avro_EnumSchema_System_Object_Avro_IO_Encoder_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultWriter.WriteEnum(Avro.EnumSchema%2CSystem.Object%2CAvro.IO.Encoder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericWriter.cs/#L218">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultWriter_WriteEnum_" data-uid="Avro.Generic.DefaultWriter.WriteEnum*"></a>
+  <h4 id="Avro_Generic_DefaultWriter_WriteEnum_Avro_EnumSchema_System_Object_Avro_IO_Encoder_" data-uid="Avro.Generic.DefaultWriter.WriteEnum(Avro.EnumSchema,System.Object,Avro.IO.Encoder)">WriteEnum(EnumSchema, Object, Encoder)</h4>
+  <div class="markdown level1 summary"><p>Serializes an enumeration. The default implementation expectes the value to be string whose
+value is the name of the enumeration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void WriteEnum(EnumSchema es, object value, Encoder encoder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.EnumSchema.html">EnumSchema</a></td>
+        <td><span class="parametername">es</span></td>
+        <td><p>The EnumSchema for serialization</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>Value to be written</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.IO.Encoder.html">Encoder</a></td>
+        <td><span class="parametername">encoder</span></td>
+        <td><p>Encoder for serialization</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultWriter_WriteFixed_Avro_FixedSchema_System_Object_Avro_IO_Encoder_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultWriter.WriteFixed(Avro.FixedSchema%2CSystem.Object%2CAvro.IO.Encoder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericWriter.cs/#L379">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultWriter_WriteFixed_" data-uid="Avro.Generic.DefaultWriter.WriteFixed*"></a>
+  <h4 id="Avro_Generic_DefaultWriter_WriteFixed_Avro_FixedSchema_System_Object_Avro_IO_Encoder_" data-uid="Avro.Generic.DefaultWriter.WriteFixed(Avro.FixedSchema,System.Object,Avro.IO.Encoder)">WriteFixed(FixedSchema, Object, Encoder)</h4>
+  <div class="markdown level1 summary"><p>Serialized a fixed object. The default implementation requires that the value is
+a GenericFixed object with an identical schema as es.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void WriteFixed(FixedSchema es, object value, Encoder encoder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.FixedSchema.html">FixedSchema</a></td>
+        <td><span class="parametername">es</span></td>
+        <td><p>The schema for serialization</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to be serialized</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.IO.Encoder.html">Encoder</a></td>
+        <td><span class="parametername">encoder</span></td>
+        <td><p>The encoder for serialization</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultWriter_WriteMap_Avro_MapSchema_System_Object_Avro_IO_Encoder_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultWriter.WriteMap(Avro.MapSchema%2CSystem.Object%2CAvro.IO.Encoder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericWriter.cs/#L291">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultWriter_WriteMap_" data-uid="Avro.Generic.DefaultWriter.WriteMap*"></a>
+  <h4 id="Avro_Generic_DefaultWriter_WriteMap_Avro_MapSchema_System_Object_Avro_IO_Encoder_" data-uid="Avro.Generic.DefaultWriter.WriteMap(Avro.MapSchema,System.Object,Avro.IO.Encoder)">WriteMap(MapSchema, Object, Encoder)</h4>
+  <div class="markdown level1 summary"><p>Serialized a map. The default implementation first ensure that the value is indeed a map and then uses
+GetMapSize() and GetMapElements() to access the contents of the map.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void WriteMap(MapSchema schema, object value, Encoder encoder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.MapSchema.html">MapSchema</a></td>
+        <td><span class="parametername">schema</span></td>
+        <td><p>The MapSchema for serialization</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to be serialized</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.IO.Encoder.html">Encoder</a></td>
+        <td><span class="parametername">encoder</span></td>
+        <td><p>The encoder for serialization</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultWriter_WriteNull_System_Object_Avro_IO_Encoder_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultWriter.WriteNull(System.Object%2CAvro.IO.Encoder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericWriter.cs/#L146">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultWriter_WriteNull_" data-uid="Avro.Generic.DefaultWriter.WriteNull*"></a>
+  <h4 id="Avro_Generic_DefaultWriter_WriteNull_System_Object_Avro_IO_Encoder_" data-uid="Avro.Generic.DefaultWriter.WriteNull(System.Object,Avro.IO.Encoder)">WriteNull(Object, Encoder)</h4>
+  <div class="markdown level1 summary"><p>Serializes a &quot;null&quot;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void WriteNull(object value, Encoder encoder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The object to be serialized using null schema</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.IO.Encoder.html">Encoder</a></td>
+        <td><span class="parametername">encoder</span></td>
+        <td><p>The encoder to use while serialization</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultWriter_WriteRecord_Avro_RecordSchema_System_Object_Avro_IO_Encoder_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultWriter.WriteRecord(Avro.RecordSchema%2CSystem.Object%2CAvro.IO.Encoder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericWriter.cs/#L172">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultWriter_WriteRecord_" data-uid="Avro.Generic.DefaultWriter.WriteRecord*"></a>
+  <h4 id="Avro_Generic_DefaultWriter_WriteRecord_Avro_RecordSchema_System_Object_Avro_IO_Encoder_" data-uid="Avro.Generic.DefaultWriter.WriteRecord(Avro.RecordSchema,System.Object,Avro.IO.Encoder)">WriteRecord(RecordSchema, Object, Encoder)</h4>
+  <div class="markdown level1 summary"><p>Serialized a record using the given RecordSchema. It uses GetField method
+to extract the field value from the given object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void WriteRecord(RecordSchema schema, object value, Encoder encoder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.RecordSchema.html">RecordSchema</a></td>
+        <td><span class="parametername">schema</span></td>
+        <td><p>The RecordSchema to use for serialization</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to be serialized</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.IO.Encoder.html">Encoder</a></td>
+        <td><span class="parametername">encoder</span></td>
+        <td><p>The Encoder for serialization</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultWriter_WriteUnion_Avro_UnionSchema_System_Object_Avro_IO_Encoder_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultWriter.WriteUnion(Avro.UnionSchema%2CSystem.Object%2CAvro.IO.Encoder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericWriter.cs/#L348">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultWriter_WriteUnion_" data-uid="Avro.Generic.DefaultWriter.WriteUnion*"></a>
+  <h4 id="Avro_Generic_DefaultWriter_WriteUnion_Avro_UnionSchema_System_Object_Avro_IO_Encoder_" data-uid="Avro.Generic.DefaultWriter.WriteUnion(Avro.UnionSchema,System.Object,Avro.IO.Encoder)">WriteUnion(UnionSchema, Object, Encoder)</h4>
+  <div class="markdown level1 summary"><p>Resolves the given value against the given UnionSchema and serializes the object against
+the resolved schema member. The default implementation of this method uses
+ResolveUnion to find the member schema within the UnionSchema.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void WriteUnion(UnionSchema us, object value, Encoder encoder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.UnionSchema.html">UnionSchema</a></td>
+        <td><span class="parametername">us</span></td>
+        <td><p>The UnionSchema to resolve against</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to be serialized</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.IO.Encoder.html">Encoder</a></td>
+        <td><span class="parametername">encoder</span></td>
+        <td><p>The encoder for serialization</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultWriter.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultWriter%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericWriter.cs/#L63" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

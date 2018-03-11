@@ -1,0 +1,897 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class PreresolvingDatumWriter&lt;T&gt;
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class PreresolvingDatumWriter&lt;T&gt;
+   ">
+    <meta name="generator" content="docfx 2.32.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Avro.Generic.PreresolvingDatumWriter`1">
+  
+  
+  <h1 id="Avro_Generic_PreresolvingDatumWriter_1" data-uid="Avro.Generic.PreresolvingDatumWriter`1" class="text-break">Class PreresolvingDatumWriter&lt;T&gt;
+  </h1>
+  <div class="markdown level0 summary"><p>A general purpose writer of data from avro streams. This writer analyzes the writer schema
+when constructed so that writes can be more efficient. Once constructed, a writer can be reused or shared among threads
+to avoid incurring more resolution costs.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">PreresolvingDatumWriter&lt;T&gt;</span></div>
+      <div class="level2"><a class="xref" href="Avro.Generic.GenericDatumWriter-1.html">GenericDatumWriter&lt;T&gt;</a></div>
+      <div class="level2"><a class="xref" href="Avro.Specific.SpecificDatumWriter-1.html">SpecificDatumWriter&lt;T&gt;</a></div>
+  </div>
+  <div classs="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="Avro.Generic.DatumWriter-1.html">DatumWriter</a>&lt;T&gt;</div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Avro.Generic.html">Avro.Generic</a></h6>
+  <h6><strong>Assembly</strong>: Avro.dll</h6>
+  <h5 id="Avro_Generic_PreresolvingDatumWriter_1_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class PreresolvingDatumWriter&lt;T&gt; : DatumWriter&lt;T&gt;</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_PreresolvingDatumWriter_1__ctor_Avro_Schema_Avro_Generic_PreresolvingDatumWriter__0__ArrayAccess_Avro_Generic_PreresolvingDatumWriter__0__MapAccess_.md&amp;value=---%0Auid%3A%20Avro.Generic.PreresolvingDatumWriter%601.%23ctor(Avro.Schema%2CAvro.Generic.PreresolvingDatumWriter%7B%600%7D.ArrayAccess%2CAvro.Generic.PreresolvingDatumWriter%7B%600%7D.MapAccess)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/PreresolvingDatumWriter.cs/#L48">View Source</a>
+  </span>
+  <a id="Avro_Generic_PreresolvingDatumWriter_1__ctor_" data-uid="Avro.Generic.PreresolvingDatumWriter`1.#ctor*"></a>
+  <h4 id="Avro_Generic_PreresolvingDatumWriter_1__ctor_Avro_Schema_Avro_Generic_PreresolvingDatumWriter__0__ArrayAccess_Avro_Generic_PreresolvingDatumWriter__0__MapAccess_" data-uid="Avro.Generic.PreresolvingDatumWriter`1.#ctor(Avro.Schema,Avro.Generic.PreresolvingDatumWriter{`0}.ArrayAccess,Avro.Generic.PreresolvingDatumWriter{`0}.MapAccess)">PreresolvingDatumWriter(Schema, PreresolvingDatumWriter&lt;T&gt;.ArrayAccess, PreresolvingDatumWriter&lt;T&gt;.MapAccess)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PreresolvingDatumWriter(Schema schema, PreresolvingDatumWriter&lt;T&gt;.ArrayAccess arrayAccess, PreresolvingDatumWriter&lt;T&gt;.MapAccess mapAccess)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.Schema.html">Schema</a></td>
+        <td><span class="parametername">schema</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.Generic.PreresolvingDatumWriter-1.ArrayAccess.html">PreresolvingDatumWriter.ArrayAccess</a>&lt;&gt;</td>
+        <td><span class="parametername">arrayAccess</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.Generic.PreresolvingDatumWriter-1.MapAccess.html">PreresolvingDatumWriter.MapAccess</a>&lt;&gt;</td>
+        <td><span class="parametername">mapAccess</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_PreresolvingDatumWriter_1_Schema.md&amp;value=---%0Auid%3A%20Avro.Generic.PreresolvingDatumWriter%601.Schema%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/PreresolvingDatumWriter.cs/#L33">View Source</a>
+  </span>
+  <a id="Avro_Generic_PreresolvingDatumWriter_1_Schema_" data-uid="Avro.Generic.PreresolvingDatumWriter`1.Schema*"></a>
+  <h4 id="Avro_Generic_PreresolvingDatumWriter_1_Schema" data-uid="Avro.Generic.PreresolvingDatumWriter`1.Schema">Schema</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Schema Schema { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.Schema.html">Schema</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_PreresolvingDatumWriter_1_EnsureRecordObject_Avro_RecordSchema_System_Object_.md&amp;value=---%0Auid%3A%20Avro.Generic.PreresolvingDatumWriter%601.EnsureRecordObject(Avro.RecordSchema%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/PreresolvingDatumWriter.cs/#L158">View Source</a>
+  </span>
+  <a id="Avro_Generic_PreresolvingDatumWriter_1_EnsureRecordObject_" data-uid="Avro.Generic.PreresolvingDatumWriter`1.EnsureRecordObject*"></a>
+  <h4 id="Avro_Generic_PreresolvingDatumWriter_1_EnsureRecordObject_Avro_RecordSchema_System_Object_" data-uid="Avro.Generic.PreresolvingDatumWriter`1.EnsureRecordObject(Avro.RecordSchema,System.Object)">EnsureRecordObject(RecordSchema, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void EnsureRecordObject(RecordSchema recordSchema, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.RecordSchema.html">RecordSchema</a></td>
+        <td><span class="parametername">recordSchema</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_PreresolvingDatumWriter_1_ResolveArray_Avro_ArraySchema_.md&amp;value=---%0Auid%3A%20Avro.Generic.PreresolvingDatumWriter%601.ResolveArray(Avro.ArraySchema)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/PreresolvingDatumWriter.cs/#L183">View Source</a>
+  </span>
+  <a id="Avro_Generic_PreresolvingDatumWriter_1_ResolveArray_" data-uid="Avro.Generic.PreresolvingDatumWriter`1.ResolveArray*"></a>
+  <h4 id="Avro_Generic_PreresolvingDatumWriter_1_ResolveArray_Avro_ArraySchema_" data-uid="Avro.Generic.PreresolvingDatumWriter`1.ResolveArray(Avro.ArraySchema)">ResolveArray(ArraySchema)</h4>
+  <div class="markdown level1 summary"><p>Serialized an array. The default implementation calls EnsureArrayObject() to ascertain that the
+given value is an array. It then calls GetArrayLength() and GetArrayElement()
+to access the members of the array and then serialize them.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected PreresolvingDatumWriter&lt;T&gt;.WriteItem ResolveArray(ArraySchema schema)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.ArraySchema.html">ArraySchema</a></td>
+        <td><span class="parametername">schema</span></td>
+        <td><p>The ArraySchema for serialization</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.Generic.PreresolvingDatumWriter-1.WriteItem.html">PreresolvingDatumWriter.WriteItem</a>&lt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_PreresolvingDatumWriter_1_ResolveEnum_Avro_EnumSchema_.md&amp;value=---%0Auid%3A%20Avro.Generic.PreresolvingDatumWriter%601.ResolveEnum(Avro.EnumSchema)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/PreresolvingDatumWriter.cs/#L173">View Source</a>
+  </span>
+  <a id="Avro_Generic_PreresolvingDatumWriter_1_ResolveEnum_" data-uid="Avro.Generic.PreresolvingDatumWriter`1.ResolveEnum*"></a>
+  <h4 id="Avro_Generic_PreresolvingDatumWriter_1_ResolveEnum_Avro_EnumSchema_" data-uid="Avro.Generic.PreresolvingDatumWriter`1.ResolveEnum(Avro.EnumSchema)">ResolveEnum(EnumSchema)</h4>
+  <div class="markdown level1 summary"><p>Serializes an enumeration.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract PreresolvingDatumWriter&lt;T&gt;.WriteItem ResolveEnum(EnumSchema es)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.EnumSchema.html">EnumSchema</a></td>
+        <td><span class="parametername">es</span></td>
+        <td><p>The EnumSchema for serialization</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.Generic.PreresolvingDatumWriter-1.WriteItem.html">PreresolvingDatumWriter.WriteItem</a>&lt;&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_PreresolvingDatumWriter_1_ResolveUnion_Avro_UnionSchema_Avro_Schema___System_Object_.md&amp;value=---%0Auid%3A%20Avro.Generic.PreresolvingDatumWriter%601.ResolveUnion(Avro.UnionSchema%2CAvro.Schema%5B%5D%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/PreresolvingDatumWriter.cs/#L258">View Source</a>
+  </span>
+  <a id="Avro_Generic_PreresolvingDatumWriter_1_ResolveUnion_" data-uid="Avro.Generic.PreresolvingDatumWriter`1.ResolveUnion*"></a>
+  <h4 id="Avro_Generic_PreresolvingDatumWriter_1_ResolveUnion_Avro_UnionSchema_Avro_Schema___System_Object_" data-uid="Avro.Generic.PreresolvingDatumWriter`1.ResolveUnion(Avro.UnionSchema,Avro.Schema[],System.Object)">ResolveUnion(UnionSchema, Schema[], Object)</h4>
+  <div class="markdown level1 summary"><p>Finds the branch within the given UnionSchema that matches the given object. The default implementation
+calls Matches() method in the order of branches within the UnionSchema. If nothing matches, throws
+an exception.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected int ResolveUnion(UnionSchema us, Schema[] branchSchemas, object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.UnionSchema.html">UnionSchema</a></td>
+        <td><span class="parametername">us</span></td>
+        <td><p>The UnionSchema to resolve against</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.Schema.html">Schema</a>[]</td>
+        <td><span class="parametername">branchSchemas</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>The object that should be used in matching</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_PreresolvingDatumWriter_1_TypeMismatch_System_Object_System_String_System_String_.md&amp;value=---%0Auid%3A%20Avro.Generic.PreresolvingDatumWriter%601.TypeMismatch(System.Object%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/PreresolvingDatumWriter.cs/#L276">View Source</a>
+  </span>
+  <a id="Avro_Generic_PreresolvingDatumWriter_1_TypeMismatch_" data-uid="Avro.Generic.PreresolvingDatumWriter`1.TypeMismatch*"></a>
+  <h4 id="Avro_Generic_PreresolvingDatumWriter_1_TypeMismatch_System_Object_System_String_System_String_" data-uid="Avro.Generic.PreresolvingDatumWriter`1.TypeMismatch(System.Object,System.String,System.String)">TypeMismatch(Object, String, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static AvroException TypeMismatch(object obj, string schemaType, string type)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">schemaType</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">type</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.AvroException.html">AvroException</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_PreresolvingDatumWriter_1_UnionBranchMatches_Avro_Schema_System_Object_.md&amp;value=---%0Auid%3A%20Avro.Generic.PreresolvingDatumWriter%601.UnionBranchMatches(Avro.Schema%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/PreresolvingDatumWriter.cs/#L286">View Source</a>
+  </span>
+  <a id="Avro_Generic_PreresolvingDatumWriter_1_UnionBranchMatches_" data-uid="Avro.Generic.PreresolvingDatumWriter`1.UnionBranchMatches*"></a>
+  <h4 id="Avro_Generic_PreresolvingDatumWriter_1_UnionBranchMatches_Avro_Schema_System_Object_" data-uid="Avro.Generic.PreresolvingDatumWriter`1.UnionBranchMatches(Avro.Schema,System.Object)">UnionBranchMatches(Schema, Object)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract bool UnionBranchMatches(Schema sc, object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.Schema.html">Schema</a></td>
+        <td><span class="parametername">sc</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_PreresolvingDatumWriter_1_Write__0_Avro_IO_Encoder_.md&amp;value=---%0Auid%3A%20Avro.Generic.PreresolvingDatumWriter%601.Write(%600%2CAvro.IO.Encoder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/PreresolvingDatumWriter.cs/#L43">View Source</a>
+  </span>
+  <a id="Avro_Generic_PreresolvingDatumWriter_1_Write_" data-uid="Avro.Generic.PreresolvingDatumWriter`1.Write*"></a>
+  <h4 id="Avro_Generic_PreresolvingDatumWriter_1_Write__0_Avro_IO_Encoder_" data-uid="Avro.Generic.PreresolvingDatumWriter`1.Write(`0,Avro.IO.Encoder)">Write(T, Encoder)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Write(T datum, Encoder encoder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">datum</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.IO.Encoder.html">Encoder</a></td>
+        <td><span class="parametername">encoder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_PreresolvingDatumWriter_1_Write__1_System_Object_Avro_Schema_Type_Avro_Generic_Writer___0__.md&amp;value=---%0Auid%3A%20Avro.Generic.PreresolvingDatumWriter%601.Write%60%601(System.Object%2CAvro.Schema.Type%2CAvro.Generic.Writer%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/PreresolvingDatumWriter.cs/#L111">View Source</a>
+  </span>
+  <a id="Avro_Generic_PreresolvingDatumWriter_1_Write_" data-uid="Avro.Generic.PreresolvingDatumWriter`1.Write*"></a>
+  <h4 id="Avro_Generic_PreresolvingDatumWriter_1_Write__1_System_Object_Avro_Schema_Type_Avro_Generic_Writer___0__" data-uid="Avro.Generic.PreresolvingDatumWriter`1.Write``1(System.Object,Avro.Schema.Type,Avro.Generic.Writer{``0})">Write&lt;S&gt;(Object, Schema.Type, Writer&lt;S&gt;)</h4>
+  <div class="markdown level1 summary"><p>A generic method to serialize primitive Avro types.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Write&lt;S&gt;(object value, Schema.Type tag, Writer&lt;S&gt; writer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to be serialized</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.Schema.Type.html">Schema.Type</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>The schema type tag</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.Generic.Writer-1.html">Writer</a>&lt;S&gt;</td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>The writer which should be used to write the given type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">S</span></td>
+        <td><p>Type of the C# type to be serialized</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_PreresolvingDatumWriter_1_WriteField_System_Object_System_String_System_Int32_Avro_Generic_PreresolvingDatumWriter__0__WriteItem_Avro_IO_Encoder_.md&amp;value=---%0Auid%3A%20Avro.Generic.PreresolvingDatumWriter%601.WriteField(System.Object%2CSystem.String%2CSystem.Int32%2CAvro.Generic.PreresolvingDatumWriter%7B%600%7D.WriteItem%2CAvro.IO.Encoder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/PreresolvingDatumWriter.cs/#L167">View Source</a>
+  </span>
+  <a id="Avro_Generic_PreresolvingDatumWriter_1_WriteField_" data-uid="Avro.Generic.PreresolvingDatumWriter`1.WriteField*"></a>
+  <h4 id="Avro_Generic_PreresolvingDatumWriter_1_WriteField_System_Object_System_String_System_Int32_Avro_Generic_PreresolvingDatumWriter__0__WriteItem_Avro_IO_Encoder_" data-uid="Avro.Generic.PreresolvingDatumWriter`1.WriteField(System.Object,System.String,System.Int32,Avro.Generic.PreresolvingDatumWriter{`0}.WriteItem,Avro.IO.Encoder)">WriteField(Object, String, Int32, PreresolvingDatumWriter&lt;T&gt;.WriteItem, Encoder)</h4>
+  <div class="markdown level1 summary"><p>Extracts the field value from the given object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void WriteField(object record, string fieldName, int fieldPos, PreresolvingDatumWriter&lt;T&gt;.WriteItem writer, Encoder encoder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">record</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fieldName</span></td>
+        <td><p>The name of the field in the record</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">fieldPos</span></td>
+        <td><p>The position of field in the record</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.Generic.PreresolvingDatumWriter-1.WriteItem.html">PreresolvingDatumWriter.WriteItem</a>&lt;&gt;</td>
+        <td><span class="parametername">writer</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.IO.Encoder.html">Encoder</a></td>
+        <td><span class="parametername">encoder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_PreresolvingDatumWriter_1_WriteFixed_Avro_FixedSchema_System_Object_Avro_IO_Encoder_.md&amp;value=---%0Auid%3A%20Avro.Generic.PreresolvingDatumWriter%601.WriteFixed(Avro.FixedSchema%2CSystem.Object%2CAvro.IO.Encoder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/PreresolvingDatumWriter.cs/#L274">View Source</a>
+  </span>
+  <a id="Avro_Generic_PreresolvingDatumWriter_1_WriteFixed_" data-uid="Avro.Generic.PreresolvingDatumWriter`1.WriteFixed*"></a>
+  <h4 id="Avro_Generic_PreresolvingDatumWriter_1_WriteFixed_Avro_FixedSchema_System_Object_Avro_IO_Encoder_" data-uid="Avro.Generic.PreresolvingDatumWriter`1.WriteFixed(Avro.FixedSchema,System.Object,Avro.IO.Encoder)">WriteFixed(FixedSchema, Object, Encoder)</h4>
+  <div class="markdown level1 summary"><p>Serialized a fixed object. The default implementation requires that the value is
+a GenericFixed object with an identical schema as es.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void WriteFixed(FixedSchema es, object value, Encoder encoder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.FixedSchema.html">FixedSchema</a></td>
+        <td><span class="parametername">es</span></td>
+        <td><p>The schema for serialization</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to be serialized</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.IO.Encoder.html">Encoder</a></td>
+        <td><span class="parametername">encoder</span></td>
+        <td><p>The encoder for serialization</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_PreresolvingDatumWriter_1_WriteMap_Avro_Generic_PreresolvingDatumWriter__0__WriteItem_System_Object_Avro_IO_Encoder_.md&amp;value=---%0Auid%3A%20Avro.Generic.PreresolvingDatumWriter%601.WriteMap(Avro.Generic.PreresolvingDatumWriter%7B%600%7D.WriteItem%2CSystem.Object%2CAvro.IO.Encoder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/PreresolvingDatumWriter.cs/#L212">View Source</a>
+  </span>
+  <a id="Avro_Generic_PreresolvingDatumWriter_1_WriteMap_" data-uid="Avro.Generic.PreresolvingDatumWriter`1.WriteMap*"></a>
+  <h4 id="Avro_Generic_PreresolvingDatumWriter_1_WriteMap_Avro_Generic_PreresolvingDatumWriter__0__WriteItem_System_Object_Avro_IO_Encoder_" data-uid="Avro.Generic.PreresolvingDatumWriter`1.WriteMap(Avro.Generic.PreresolvingDatumWriter{`0}.WriteItem,System.Object,Avro.IO.Encoder)">WriteMap(PreresolvingDatumWriter&lt;T&gt;.WriteItem, Object, Encoder)</h4>
+  <div class="markdown level1 summary"><p>Serialized a map. The default implementation first ensure that the value is indeed a map and then uses
+GetMapSize() and GetMapElements() to access the contents of the map.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void WriteMap(PreresolvingDatumWriter&lt;T&gt;.WriteItem itemWriter, object value, Encoder encoder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.Generic.PreresolvingDatumWriter-1.WriteItem.html">PreresolvingDatumWriter.WriteItem</a>&lt;&gt;</td>
+        <td><span class="parametername">itemWriter</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to be serialized</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.IO.Encoder.html">Encoder</a></td>
+        <td><span class="parametername">encoder</span></td>
+        <td><p>The encoder for serialization</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_PreresolvingDatumWriter_1_WriteNull_System_Object_Avro_IO_Encoder_.md&amp;value=---%0Auid%3A%20Avro.Generic.PreresolvingDatumWriter%601.WriteNull(System.Object%2CAvro.IO.Encoder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/PreresolvingDatumWriter.cs/#L99">View Source</a>
+  </span>
+  <a id="Avro_Generic_PreresolvingDatumWriter_1_WriteNull_" data-uid="Avro.Generic.PreresolvingDatumWriter`1.WriteNull*"></a>
+  <h4 id="Avro_Generic_PreresolvingDatumWriter_1_WriteNull_System_Object_Avro_IO_Encoder_" data-uid="Avro.Generic.PreresolvingDatumWriter`1.WriteNull(System.Object,Avro.IO.Encoder)">WriteNull(Object, Encoder)</h4>
+  <div class="markdown level1 summary"><p>Serializes a &quot;null&quot;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void WriteNull(object value, Encoder encoder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The object to be serialized using null schema</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.IO.Encoder.html">Encoder</a></td>
+        <td><span class="parametername">encoder</span></td>
+        <td><p>The encoder to use while serialization</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_PreresolvingDatumWriter_1_WriteRecordFields_System_Object_Avro_Generic_PreresolvingDatumWriter__0__RecordFieldWriter___Avro_IO_Encoder_.md&amp;value=---%0Auid%3A%20Avro.Generic.PreresolvingDatumWriter%601.WriteRecordFields(System.Object%2CAvro.Generic.PreresolvingDatumWriter%7B%600%7D.RecordFieldWriter%5B%5D%2CAvro.IO.Encoder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/PreresolvingDatumWriter.cs/#L149">View Source</a>
+  </span>
+  <a id="Avro_Generic_PreresolvingDatumWriter_1_WriteRecordFields_" data-uid="Avro.Generic.PreresolvingDatumWriter`1.WriteRecordFields*"></a>
+  <h4 id="Avro_Generic_PreresolvingDatumWriter_1_WriteRecordFields_System_Object_Avro_Generic_PreresolvingDatumWriter__0__RecordFieldWriter___Avro_IO_Encoder_" data-uid="Avro.Generic.PreresolvingDatumWriter`1.WriteRecordFields(System.Object,Avro.Generic.PreresolvingDatumWriter{`0}.RecordFieldWriter[],Avro.IO.Encoder)">WriteRecordFields(Object, PreresolvingDatumWriter&lt;T&gt;.RecordFieldWriter[], Encoder)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void WriteRecordFields(object record, PreresolvingDatumWriter&lt;T&gt;.RecordFieldWriter[] writers, Encoder encoder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">record</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.Generic.PreresolvingDatumWriter-1.RecordFieldWriter.html">PreresolvingDatumWriter.RecordFieldWriter</a>&lt;&gt;[]</td>
+        <td><span class="parametername">writers</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.IO.Encoder.html">Encoder</a></td>
+        <td><span class="parametername">encoder</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="Avro.Generic.DatumWriter-1.html">DatumWriter&lt;T&gt;</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_PreresolvingDatumWriter_1.md&amp;value=---%0Auid%3A%20Avro.Generic.PreresolvingDatumWriter%601%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/PreresolvingDatumWriter.cs/#L31" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,413 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FixedSchema
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FixedSchema
+   ">
+    <meta name="generator" content="docfx 2.32.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Avro.FixedSchema">
+  
+  
+  <h1 id="Avro_FixedSchema" data-uid="Avro.FixedSchema" class="text-break">Class FixedSchema
+  </h1>
+  <div class="markdown level0 summary"><p>Class for fixed schemas</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Avro.Schema.html">Schema</a></div>
+    <div class="level2"><a class="xref" href="Avro.NamedSchema.html">NamedSchema</a></div>
+    <div class="level3"><span class="xref">FixedSchema</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Avro.NamedSchema.html#Avro_NamedSchema_SchemaName">NamedSchema.SchemaName</a>
+    </div>
+    <div>
+      <a class="xref" href="Avro.NamedSchema.html#Avro_NamedSchema_Name">NamedSchema.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="Avro.NamedSchema.html#Avro_NamedSchema_Namespace">NamedSchema.Namespace</a>
+    </div>
+    <div>
+      <a class="xref" href="Avro.NamedSchema.html#Avro_NamedSchema_Fullname">NamedSchema.Fullname</a>
+    </div>
+    <div>
+      <a class="xref" href="Avro.NamedSchema.html#Avro_NamedSchema_GetName_Newtonsoft_Json_Linq_JToken_System_String_">NamedSchema.GetName(JToken, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Avro.NamedSchema.html#Avro_NamedSchema_GetAliases_Newtonsoft_Json_Linq_JToken_System_String_System_String_">NamedSchema.GetAliases(JToken, String, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Avro.NamedSchema.html#Avro_NamedSchema_InAliases_Avro_SchemaName_">NamedSchema.InAliases(SchemaName)</a>
+    </div>
+    <div>
+      <a class="xref" href="Avro.NamedSchema.html#Avro_NamedSchema_WriteJson_Newtonsoft_Json_JsonTextWriter_Avro_SchemaNames_System_String_">NamedSchema.WriteJson(JsonTextWriter, SchemaNames, String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Avro.Schema.html#Avro_Schema_Tag">Schema.Tag</a>
+    </div>
+    <div>
+      <a class="xref" href="Avro.Schema.html#Avro_Schema_Parse_System_String_">Schema.Parse(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Avro.Schema.html#Avro_Schema_ToString">Schema.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Avro.Schema.html#Avro_Schema_GetTypeString_Avro_Schema_Type_">Schema.GetTypeString(Schema.Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="Avro.Schema.html#Avro_Schema_GetProperty_System_String_">Schema.GetProperty(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Avro.Schema.html#Avro_Schema_areEqual_System_Object_System_Object_">Schema.areEqual(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Avro.Schema.html#Avro_Schema_getHashCode_System_Object_">Schema.getHashCode(Object)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Avro.html">Avro</a></h6>
+  <h6><strong>Assembly</strong>: Avro.dll</h6>
+  <h5 id="Avro_FixedSchema_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FixedSchema : NamedSchema</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_FixedSchema_Size.md&amp;value=---%0Auid%3A%20Avro.FixedSchema.Size%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Schema/FixedSchema.cs/#L33">View Source</a>
+  </span>
+  <a id="Avro_FixedSchema_Size_" data-uid="Avro.FixedSchema.Size*"></a>
+  <h4 id="Avro_FixedSchema_Size" data-uid="Avro.FixedSchema.Size">Size</h4>
+  <div class="markdown level1 summary"><p>Fixed size for the bytes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Size { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_FixedSchema_CanRead_Avro_Schema_.md&amp;value=---%0Auid%3A%20Avro.FixedSchema.CanRead(Avro.Schema)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Schema/FixedSchema.cs/#L109">View Source</a>
+  </span>
+  <a id="Avro_FixedSchema_CanRead_" data-uid="Avro.FixedSchema.CanRead*"></a>
+  <h4 id="Avro_FixedSchema_CanRead_Avro_Schema_" data-uid="Avro.FixedSchema.CanRead(Avro.Schema)">CanRead(Schema)</h4>
+  <div class="markdown level1 summary"><p>Checks if this schema can read data written by the given schema. Used for decoding data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool CanRead(Schema writerSchema)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.Schema.html">Schema</a></td>
+        <td><span class="parametername">writerSchema</span></td>
+        <td><p>writer schema</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if this and writer schema are compatible based on the AVRO specification, false otherwise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Avro.Schema.html#Avro_Schema_CanRead_Avro_Schema_">Schema.CanRead(Schema)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_FixedSchema_Equals_System_Object_.md&amp;value=---%0Auid%3A%20Avro.FixedSchema.Equals(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Schema/FixedSchema.cs/#L83">View Source</a>
+  </span>
+  <a id="Avro_FixedSchema_Equals_" data-uid="Avro.FixedSchema.Equals*"></a>
+  <h4 id="Avro_FixedSchema_Equals_System_Object_" data-uid="Avro.FixedSchema.Equals(System.Object)">Equals(Object)</h4>
+  <div class="markdown level1 summary"><p>Compares two fixed schemas</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">obj</span></td>
+        <td><p>fixed schema to compare against this schema</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>true if two schemas are the same, false otherwise</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">System.Object.Equals(System.Object)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_FixedSchema_GetHashCode.md&amp;value=---%0Auid%3A%20Avro.FixedSchema.GetHashCode%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Schema/FixedSchema.cs/#L99">View Source</a>
+  </span>
+  <a id="Avro_FixedSchema_GetHashCode_" data-uid="Avro.FixedSchema.GetHashCode*"></a>
+  <h4 id="Avro_FixedSchema_GetHashCode" data-uid="Avro.FixedSchema.GetHashCode">GetHashCode()</h4>
+  <div class="markdown level1 summary"><p>Hash code function</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Avro.Schema.html#Avro_Schema_GetHashCode">Schema.GetHashCode()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_FixedSchema_WriteJsonFields_Newtonsoft_Json_JsonTextWriter_Avro_SchemaNames_System_String_.md&amp;value=---%0Auid%3A%20Avro.FixedSchema.WriteJsonFields(Newtonsoft.Json.JsonTextWriter%2CAvro.SchemaNames%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Schema/FixedSchema.cs/#L71">View Source</a>
+  </span>
+  <a id="Avro_FixedSchema_WriteJsonFields_" data-uid="Avro.FixedSchema.WriteJsonFields*"></a>
+  <h4 id="Avro_FixedSchema_WriteJsonFields_Newtonsoft_Json_JsonTextWriter_Avro_SchemaNames_System_String_" data-uid="Avro.FixedSchema.WriteJsonFields(Newtonsoft.Json.JsonTextWriter,Avro.SchemaNames,System.String)">WriteJsonFields(JsonTextWriter, SchemaNames, String)</h4>
+  <div class="markdown level1 summary"><p>Writes the fixed schema class in JSON format</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void WriteJsonFields(JsonTextWriter writer, SchemaNames names, string encspace)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Newtonsoft.Json.JsonTextWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>JSON writer</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.SchemaNames.html">SchemaNames</a></td>
+        <td><span class="parametername">names</span></td>
+        <td><p>list of named schema already written</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">encspace</span></td>
+        <td><p>enclosing namespace for the fixed schema</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Avro.NamedSchema.html#Avro_NamedSchema_WriteJsonFields_Newtonsoft_Json_JsonTextWriter_Avro_SchemaNames_System_String_">NamedSchema.WriteJsonFields(JsonTextWriter, SchemaNames, String)</a></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_FixedSchema.md&amp;value=---%0Auid%3A%20Avro.FixedSchema%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Schema/FixedSchema.cs/#L28" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

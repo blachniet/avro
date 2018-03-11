@@ -1,0 +1,630 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class NamedSchema
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class NamedSchema
+   ">
+    <meta name="generator" content="docfx 2.32.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Avro.NamedSchema">
+  
+  
+  <h1 id="Avro_NamedSchema" data-uid="Avro.NamedSchema" class="text-break">Class NamedSchema
+  </h1>
+  <div class="markdown level0 summary"><p>Base class for all named schemas: fixed, enum, record</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="Avro.Schema.html">Schema</a></div>
+    <div class="level2"><span class="xref">NamedSchema</span></div>
+      <div class="level3"><a class="xref" href="Avro.EnumSchema.html">EnumSchema</a></div>
+      <div class="level3"><a class="xref" href="Avro.FixedSchema.html">FixedSchema</a></div>
+      <div class="level3"><a class="xref" href="Avro.RecordSchema.html">RecordSchema</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="Avro.Schema.html#Avro_Schema_Tag">Schema.Tag</a>
+    </div>
+    <div>
+      <a class="xref" href="Avro.Schema.html#Avro_Schema_Parse_System_String_">Schema.Parse(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Avro.Schema.html#Avro_Schema_ToString">Schema.ToString()</a>
+    </div>
+    <div>
+      <a class="xref" href="Avro.Schema.html#Avro_Schema_GetTypeString_Avro_Schema_Type_">Schema.GetTypeString(Schema.Type)</a>
+    </div>
+    <div>
+      <a class="xref" href="Avro.Schema.html#Avro_Schema_GetProperty_System_String_">Schema.GetProperty(String)</a>
+    </div>
+    <div>
+      <a class="xref" href="Avro.Schema.html#Avro_Schema_GetHashCode">Schema.GetHashCode()</a>
+    </div>
+    <div>
+      <a class="xref" href="Avro.Schema.html#Avro_Schema_CanRead_Avro_Schema_">Schema.CanRead(Schema)</a>
+    </div>
+    <div>
+      <a class="xref" href="Avro.Schema.html#Avro_Schema_areEqual_System_Object_System_Object_">Schema.areEqual(Object, Object)</a>
+    </div>
+    <div>
+      <a class="xref" href="Avro.Schema.html#Avro_Schema_getHashCode_System_Object_">Schema.getHashCode(Object)</a>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Avro.html">Avro</a></h6>
+  <h6><strong>Assembly</strong>: Avro.dll</h6>
+  <h5 id="Avro_NamedSchema_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class NamedSchema : Schema</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_NamedSchema__ctor_Avro_Schema_Type_Avro_SchemaName_System_Collections_Generic_IList_Avro_SchemaName__Avro_PropertyMap_Avro_SchemaNames_.md&amp;value=---%0Auid%3A%20Avro.NamedSchema.%23ctor(Avro.Schema.Type%2CAvro.SchemaName%2CSystem.Collections.Generic.IList%7BAvro.SchemaName%7D%2CAvro.PropertyMap%2CAvro.SchemaNames)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Schema/NamedSchema.cs/#L99">View Source</a>
+  </span>
+  <a id="Avro_NamedSchema__ctor_" data-uid="Avro.NamedSchema.#ctor*"></a>
+  <h4 id="Avro_NamedSchema__ctor_Avro_Schema_Type_Avro_SchemaName_System_Collections_Generic_IList_Avro_SchemaName__Avro_PropertyMap_Avro_SchemaNames_" data-uid="Avro.NamedSchema.#ctor(Avro.Schema.Type,Avro.SchemaName,System.Collections.Generic.IList{Avro.SchemaName},Avro.PropertyMap,Avro.SchemaNames)">NamedSchema(Schema.Type, SchemaName, IList&lt;SchemaName&gt;, PropertyMap, SchemaNames)</h4>
+  <div class="markdown level1 summary"><p>Constructor for named schema class</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected NamedSchema(Schema.Type type, SchemaName name, IList&lt;SchemaName&gt; aliases, PropertyMap props, SchemaNames names)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.Schema.Type.html">Schema.Type</a></td>
+        <td><span class="parametername">type</span></td>
+        <td><p>schema type</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.SchemaName.html">SchemaName</a></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>name</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Avro.SchemaName.html">SchemaName</a>&gt;</td>
+        <td><span class="parametername">aliases</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.PropertyMap.html">PropertyMap</a></td>
+        <td><span class="parametername">props</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.SchemaNames.html">SchemaNames</a></td>
+        <td><span class="parametername">names</span></td>
+        <td><p>list of named schemas already read</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_NamedSchema_Fullname.md&amp;value=---%0Auid%3A%20Avro.NamedSchema.Fullname%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Schema/NamedSchema.cs/#L55">View Source</a>
+  </span>
+  <a id="Avro_NamedSchema_Fullname_" data-uid="Avro.NamedSchema.Fullname*"></a>
+  <h4 id="Avro_NamedSchema_Fullname" data-uid="Avro.NamedSchema.Fullname">Fullname</h4>
+  <div class="markdown level1 summary"><p>Namespace.Name of the schema</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Fullname { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_NamedSchema_Name.md&amp;value=---%0Auid%3A%20Avro.NamedSchema.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Schema/NamedSchema.cs/#L39">View Source</a>
+  </span>
+  <a id="Avro_NamedSchema_Name_" data-uid="Avro.NamedSchema.Name*"></a>
+  <h4 id="Avro_NamedSchema_Name" data-uid="Avro.NamedSchema.Name">Name</h4>
+  <div class="markdown level1 summary"><p>Name of the schema</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string Name { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Avro.Schema.html#Avro_Schema_Name">Schema.Name</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_NamedSchema_Namespace.md&amp;value=---%0Auid%3A%20Avro.NamedSchema.Namespace%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Schema/NamedSchema.cs/#L47">View Source</a>
+  </span>
+  <a id="Avro_NamedSchema_Namespace_" data-uid="Avro.NamedSchema.Namespace*"></a>
+  <h4 id="Avro_NamedSchema_Namespace" data-uid="Avro.NamedSchema.Namespace">Namespace</h4>
+  <div class="markdown level1 summary"><p>Namespace of the schema</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Namespace { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_NamedSchema_SchemaName.md&amp;value=---%0Auid%3A%20Avro.NamedSchema.SchemaName%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Schema/NamedSchema.cs/#L34">View Source</a>
+  </span>
+  <a id="Avro_NamedSchema_SchemaName_" data-uid="Avro.NamedSchema.SchemaName*"></a>
+  <h4 id="Avro_NamedSchema_SchemaName" data-uid="Avro.NamedSchema.SchemaName">SchemaName</h4>
+  <div class="markdown level1 summary"><p>Name of the schema, contains name, namespace and enclosing namespace</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SchemaName SchemaName { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.SchemaName.html">SchemaName</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_NamedSchema_GetAliases_Newtonsoft_Json_Linq_JToken_System_String_System_String_.md&amp;value=---%0Auid%3A%20Avro.NamedSchema.GetAliases(Newtonsoft.Json.Linq.JToken%2CSystem.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Schema/NamedSchema.cs/#L130">View Source</a>
+  </span>
+  <a id="Avro_NamedSchema_GetAliases_" data-uid="Avro.NamedSchema.GetAliases*"></a>
+  <h4 id="Avro_NamedSchema_GetAliases_Newtonsoft_Json_Linq_JToken_System_String_System_String_" data-uid="Avro.NamedSchema.GetAliases(Newtonsoft.Json.Linq.JToken,System.String,System.String)">GetAliases(JToken, String, String)</h4>
+  <div class="markdown level1 summary"><p>Parses the &apos;aliases&apos; property from the given JSON token</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static IList&lt;SchemaName&gt; GetAliases(JToken jtok, string space, string encspace)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Newtonsoft.Json.Linq.JToken</span></td>
+        <td><span class="parametername">jtok</span></td>
+        <td><p>JSON object to read</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">space</span></td>
+        <td><p>namespace of the name this alias is for</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">encspace</span></td>
+        <td><p>enclosing namespace of the name this alias is for</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IList</span>&lt;<a class="xref" href="Avro.SchemaName.html">SchemaName</a>&gt;</td>
+        <td><p>List of SchemaName that represents the list of alias. If no &apos;aliases&apos; specified, then it returns null.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_NamedSchema_GetName_Newtonsoft_Json_Linq_JToken_System_String_.md&amp;value=---%0Auid%3A%20Avro.NamedSchema.GetName(Newtonsoft.Json.Linq.JToken%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Schema/NamedSchema.cs/#L116">View Source</a>
+  </span>
+  <a id="Avro_NamedSchema_GetName_" data-uid="Avro.NamedSchema.GetName*"></a>
+  <h4 id="Avro_NamedSchema_GetName_Newtonsoft_Json_Linq_JToken_System_String_" data-uid="Avro.NamedSchema.GetName(Newtonsoft.Json.Linq.JToken,System.String)">GetName(JToken, String)</h4>
+  <div class="markdown level1 summary"><p>Parses the name and namespace from the given JSON schema object then creates
+SchemaName object including the given enclosing namespace</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static SchemaName GetName(JToken jtok, string encspace)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Newtonsoft.Json.Linq.JToken</span></td>
+        <td><span class="parametername">jtok</span></td>
+        <td><p>JSON object to read</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">encspace</span></td>
+        <td><p>enclosing namespace</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.SchemaName.html">SchemaName</a></td>
+        <td><p>new SchemaName object</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_NamedSchema_InAliases_Avro_SchemaName_.md&amp;value=---%0Auid%3A%20Avro.NamedSchema.InAliases(Avro.SchemaName)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Schema/NamedSchema.cs/#L150">View Source</a>
+  </span>
+  <a id="Avro_NamedSchema_InAliases_" data-uid="Avro.NamedSchema.InAliases*"></a>
+  <h4 id="Avro_NamedSchema_InAliases_Avro_SchemaName_" data-uid="Avro.NamedSchema.InAliases(Avro.SchemaName)">InAliases(SchemaName)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected bool InAliases(SchemaName name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.SchemaName.html">SchemaName</a></td>
+        <td><span class="parametername">name</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_NamedSchema_WriteJson_Newtonsoft_Json_JsonTextWriter_Avro_SchemaNames_System_String_.md&amp;value=---%0Auid%3A%20Avro.NamedSchema.WriteJson(Newtonsoft.Json.JsonTextWriter%2CAvro.SchemaNames%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Schema/NamedSchema.cs/#L166">View Source</a>
+  </span>
+  <a id="Avro_NamedSchema_WriteJson_" data-uid="Avro.NamedSchema.WriteJson*"></a>
+  <h4 id="Avro_NamedSchema_WriteJson_Newtonsoft_Json_JsonTextWriter_Avro_SchemaNames_System_String_" data-uid="Avro.NamedSchema.WriteJson(Newtonsoft.Json.JsonTextWriter,Avro.SchemaNames,System.String)">WriteJson(JsonTextWriter, SchemaNames, String)</h4>
+  <div class="markdown level1 summary"><p>Writes named schema in JSON format</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void WriteJson(JsonTextWriter writer, SchemaNames names, string encspace)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Newtonsoft.Json.JsonTextWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>JSON writer</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.SchemaNames.html">SchemaNames</a></td>
+        <td><span class="parametername">names</span></td>
+        <td><p>list of named schemas already written</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">encspace</span></td>
+        <td><p>enclosing namespace of the named schema</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Avro.Schema.html#Avro_Schema_WriteJson_Newtonsoft_Json_JsonTextWriter_Avro_SchemaNames_System_String_">Schema.WriteJson(JsonTextWriter, SchemaNames, String)</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_NamedSchema_WriteJsonFields_Newtonsoft_Json_JsonTextWriter_Avro_SchemaNames_System_String_.md&amp;value=---%0Auid%3A%20Avro.NamedSchema.WriteJsonFields(Newtonsoft.Json.JsonTextWriter%2CAvro.SchemaNames%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Schema/NamedSchema.cs/#L190">View Source</a>
+  </span>
+  <a id="Avro_NamedSchema_WriteJsonFields_" data-uid="Avro.NamedSchema.WriteJsonFields*"></a>
+  <h4 id="Avro_NamedSchema_WriteJsonFields_Newtonsoft_Json_JsonTextWriter_Avro_SchemaNames_System_String_" data-uid="Avro.NamedSchema.WriteJsonFields(Newtonsoft.Json.JsonTextWriter,Avro.SchemaNames,System.String)">WriteJsonFields(JsonTextWriter, SchemaNames, String)</h4>
+  <div class="markdown level1 summary"><p>Writes named schema in JSON format</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override void WriteJsonFields(JsonTextWriter writer, SchemaNames names, string encspace)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Newtonsoft.Json.JsonTextWriter</span></td>
+        <td><span class="parametername">writer</span></td>
+        <td><p>JSON writer</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.SchemaNames.html">SchemaNames</a></td>
+        <td><span class="parametername">names</span></td>
+        <td><p>list of named schemas already written</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">encspace</span></td>
+        <td><p>enclosing namespace of the named schema</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="Avro.Schema.html#Avro_Schema_WriteJsonFields_Newtonsoft_Json_JsonTextWriter_Avro_SchemaNames_System_String_">Schema.WriteJsonFields(JsonTextWriter, SchemaNames, String)</a></div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_NamedSchema.md&amp;value=---%0Auid%3A%20Avro.NamedSchema%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Schema/NamedSchema.cs/#L29" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

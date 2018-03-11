@@ -1,0 +1,1256 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/code/github.com/blachniet/avro/lang/csharp/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.ArraySchema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.ArraySchema.html",
+          "hash": "UHCuGP4if2kCL8WD29RCzA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.AvroException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.AvroException.html",
+          "hash": "qWe+X/a6GjyCCS28OpxZ1g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.AvroRuntimeException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.AvroRuntimeException.html",
+          "hash": "zEeG9zjsJsD3npabUZA0Eg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.AvroTypeException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.AvroTypeException.html",
+          "hash": "Or1nsL1SXquUyucvQklckQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.CodeGen.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.CodeGen.html",
+          "hash": "27T/gITkSjmYJ6s0pqXTHw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.CodeGenUtil.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.CodeGenUtil.html",
+          "hash": "0nxxwN8KWzFpNphLaJ7O5Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.EnumSchema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.EnumSchema.html",
+          "hash": "ayOyHqAnUM7o81PxLxlKRg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Field.SortOrder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Field.SortOrder.html",
+          "hash": "+ns6mov7qdSvODnk7fX0ww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Field.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Field.html",
+          "hash": "S8vCTor6ozh8kcVhawWPjw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.File.Codec.Type.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.File.Codec.Type.html",
+          "hash": "8XJdd+FFTRkAluGHieZOUg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.File.Codec.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.File.Codec.html",
+          "hash": "+VI/Uom5kP4oLuyWu713Ug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.File.DataBlock.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.File.DataBlock.html",
+          "hash": "9a03oPTF8oNN0pYS07ZBeA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.File.DataFileConstants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.File.DataFileConstants.html",
+          "hash": "QFLQYonh3JvAspVuyb5SYw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.File.DataFileReader-1.CreateDatumReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.File.DataFileReader-1.CreateDatumReader.html",
+          "hash": "ArABLc5rTsVFLgHtuejRsw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.File.DataFileReader-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.File.DataFileReader-1.html",
+          "hash": "iKDBAPF2FOmCgxa7bWI6dw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.File.DataFileWriter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.File.DataFileWriter-1.html",
+          "hash": "ERYAOgsleBIFslUDJuMfdg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.File.DeflateCodec.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.File.DeflateCodec.html",
+          "hash": "P6pKcBMJtLAr3bWh9EPWEw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.File.Header.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.File.Header.html",
+          "hash": "t47eMLOD9HbpZ4phSyc17g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.File.IFileReader-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.File.IFileReader-1.html",
+          "hash": "3h28ylD13BkqVqcjZ4VUbA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.File.IFileWriter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.File.IFileWriter-1.html",
+          "hash": "qNYoa3O78YpSZdJVb54laQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.File.NullCodec.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.File.NullCodec.html",
+          "hash": "t1PpcaQXY/hDc8XOnrKmCg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.File.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.File.html",
+          "hash": "ZTTSIcVTT7DkYJTNIZuInw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.FixedSchema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.FixedSchema.html",
+          "hash": "elVUL3oaF0SJEyWoNqaWCA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Generic.DatumReader-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Generic.DatumReader-1.html",
+          "hash": "U3rp336K8plowjqqkiLUnA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Generic.DatumWriter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Generic.DatumWriter-1.html",
+          "hash": "TW4mHuvHL9ChSHZTgmj/uA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Generic.DefaultReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Generic.DefaultReader.html",
+          "hash": "0gZh1XIM70lQTxqtwphhVg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Generic.DefaultWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Generic.DefaultWriter.html",
+          "hash": "wv3y8r2NPCswayQ2PFz9Gw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Generic.GenericDatumReader-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Generic.GenericDatumReader-1.html",
+          "hash": "GOEnL97+E+M63eUi2oG5UQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Generic.GenericDatumWriter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Generic.GenericDatumWriter-1.html",
+          "hash": "+Rw0IDM0gGKU+YbSiFyGkQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Generic.GenericEnum.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Generic.GenericEnum.html",
+          "hash": "UVy5+m+BaR/w5X6bWtGxag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Generic.GenericFixed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Generic.GenericFixed.html",
+          "hash": "NLY74QR4wj9xmxE6Zeua3w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Generic.GenericReader-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Generic.GenericReader-1.html",
+          "hash": "kOrDgN6wxuSOyZrTykN3Zg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Generic.GenericRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Generic.GenericRecord.html",
+          "hash": "HU7QbRlNr57KP5y217UgZA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Generic.GenericWriter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Generic.GenericWriter-1.html",
+          "hash": "nDVSYkHMjWuBkUiHfpLdSQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Generic.PreresolvingDatumReader-1.ArrayAccess.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Generic.PreresolvingDatumReader-1.ArrayAccess.html",
+          "hash": "ez/EHGc72xCpX+2DOzqZog=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Generic.PreresolvingDatumReader-1.EnumAccess.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Generic.PreresolvingDatumReader-1.EnumAccess.html",
+          "hash": "/GHDKDFwYXD+U9p7N7hgAw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Generic.PreresolvingDatumReader-1.FixedAccess.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Generic.PreresolvingDatumReader-1.FixedAccess.html",
+          "hash": "bHbDshgHtTTGg5E8v5xNnQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Generic.PreresolvingDatumReader-1.MapAccess.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Generic.PreresolvingDatumReader-1.MapAccess.html",
+          "hash": "8EgfFmBpdsMtlZ9qluaHbA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Generic.PreresolvingDatumReader-1.ReadItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Generic.PreresolvingDatumReader-1.ReadItem.html",
+          "hash": "ArZ28Q+qKWb2JcXXXRf7VA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Generic.PreresolvingDatumReader-1.RecordAccess.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Generic.PreresolvingDatumReader-1.RecordAccess.html",
+          "hash": "FuUi33pswF41WUfTDKNWTA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Generic.PreresolvingDatumReader-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Generic.PreresolvingDatumReader-1.html",
+          "hash": "JNpd2TeqCBWvW6OuiqG1RA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Generic.PreresolvingDatumWriter-1.ArrayAccess.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Generic.PreresolvingDatumWriter-1.ArrayAccess.html",
+          "hash": "6hjA5ROizDVdLsLrfjGcLw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Generic.PreresolvingDatumWriter-1.DictionaryMapAccess.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Generic.PreresolvingDatumWriter-1.DictionaryMapAccess.html",
+          "hash": "xZGMwBiPneCwn9V2y6WysA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Generic.PreresolvingDatumWriter-1.EnumAccess.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Generic.PreresolvingDatumWriter-1.EnumAccess.html",
+          "hash": "LEzB9xmznriufCiOuL7CTg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Generic.PreresolvingDatumWriter-1.MapAccess.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Generic.PreresolvingDatumWriter-1.MapAccess.html",
+          "hash": "uXnpClu2VakUl/6rUJqNqA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Generic.PreresolvingDatumWriter-1.RecordFieldWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Generic.PreresolvingDatumWriter-1.RecordFieldWriter.html",
+          "hash": "gHNB8YED5QD60rrFM4Y8pw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Generic.PreresolvingDatumWriter-1.WriteItem.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Generic.PreresolvingDatumWriter-1.WriteItem.html",
+          "hash": "sHAbpfAFK3JTfrQUB+/F7g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Generic.PreresolvingDatumWriter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Generic.PreresolvingDatumWriter-1.html",
+          "hash": "yeTdslltz0zrkHcnVFRN8g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Generic.Reader-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Generic.Reader-1.html",
+          "hash": "ePZgky2L3mMmZiMWqlj4iA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Generic.Writer-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Generic.Writer-1.html",
+          "hash": "OyetcXIt7b5mU8t811siVw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Generic.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Generic.html",
+          "hash": "4jeLXQj3BMNHybv4uCu5gg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.IO.BinaryDecoder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.IO.BinaryDecoder.html",
+          "hash": "Ofql++X37A08fVwtpdfwAw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.IO.BinaryEncoder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.IO.BinaryEncoder.html",
+          "hash": "h/DRAqryYtnQXAj//M+m1A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.IO.ByteBufferInputStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.IO.ByteBufferInputStream.html",
+          "hash": "Ytb9cSXp5tY+mkztBIFibg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.IO.ByteBufferOutputStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.IO.ByteBufferOutputStream.html",
+          "hash": "yZjxSYP6RoqPDRAKuVLzgw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.IO.Decoder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.IO.Decoder.html",
+          "hash": "6ol7FKdGGKKhWILM/4P2lA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.IO.Encoder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.IO.Encoder.html",
+          "hash": "b0PR8dvv+GV54j+FLRIMpQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.IO.ICallback-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.IO.ICallback-1.html",
+          "hash": "hjlsEdVEDp5TCrG9IOQoAg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.IO.InputStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.IO.InputStream.html",
+          "hash": "pZajEy29DlVYlLYDkYAJqQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.IO.OutputStream.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.IO.OutputStream.html",
+          "hash": "zWbelhoeLStyliXwK9G8LQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.IO.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.IO.html",
+          "hash": "HMBLSBrayF+C0faeQoUf3A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.MapSchema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.MapSchema.html",
+          "hash": "Ton5+q9OHdS6j0iVgs0+2Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Message.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Message.html",
+          "hash": "25q2DExWpn/PfZy8o1SWBg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.NamedSchema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.NamedSchema.html",
+          "hash": "YzASv4dxyXL4aQVt2buk6w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.PrimitiveSchema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.PrimitiveSchema.html",
+          "hash": "1bC3G/ToopnIpkQ0rlFGPg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.PropertyMap.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.PropertyMap.html",
+          "hash": "VYMK6zUa/C3P12gyePEFNw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Protocol.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Protocol.html",
+          "hash": "T2aejD5UGfgJas68r/tRnw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.ProtocolParseException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.ProtocolParseException.html",
+          "hash": "W4KU04sou5E0bvy4MQsa+w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.RecordSchema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.RecordSchema.html",
+          "hash": "5cdIcpreVyNcMjnIfPiXOA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Schema.Type.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Schema.Type.html",
+          "hash": "lXYGKIV8fb4Gl4saiE/8EA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Schema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Schema.html",
+          "hash": "+FLWzTFjT3t89Lc9upDfcw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.SchemaName.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.SchemaName.html",
+          "hash": "VYc3S0Z0f1NDwGp4zf4iww=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.SchemaNames.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.SchemaNames.html",
+          "hash": "gln+DtmWSJjpzhIqKWFfhQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.SchemaNormalization.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.SchemaNormalization.html",
+          "hash": "A3M8IwTlJanyEkjgLQ0uGw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.SchemaParseException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.SchemaParseException.html",
+          "hash": "/gh+wRucmybhkGsiGMhGnQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Specific.ICallbackRequestor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Specific.ICallbackRequestor.html",
+          "hash": "q1+mRo03xJ4f/yKl7VHmBw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Specific.ISpecificProtocol.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Specific.ISpecificProtocol.html",
+          "hash": "OhHjUIE98SVKETQeaHLc1w=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Specific.ISpecificRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Specific.ISpecificRecord.html",
+          "hash": "LUBBYAjw0EuEgT7oiXm9IA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Specific.ObjectCreator.CtorDelegate.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Specific.ObjectCreator.CtorDelegate.html",
+          "hash": "RYA1btAn2APlBpQqh4xOFQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Specific.ObjectCreator.NameCtorKey.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Specific.ObjectCreator.NameCtorKey.html",
+          "hash": "2UiPBLoP0Hp4hpN4s+cmFg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Specific.ObjectCreator.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Specific.ObjectCreator.html",
+          "hash": "B+ZrHwCwpOYeJriHGYM8cQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Specific.SpecificDatumReader-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Specific.SpecificDatumReader-1.html",
+          "hash": "uPbaxoyuSjbJzZtjqkDONQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Specific.SpecificDatumWriter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Specific.SpecificDatumWriter-1.html",
+          "hash": "EEfSYgKP7/KAO0jvyoUKug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Specific.SpecificDefaultReader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Specific.SpecificDefaultReader.html",
+          "hash": "mB0igUn1pfaeOkm1dZbR7A=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Specific.SpecificDefaultWriter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Specific.SpecificDefaultWriter.html",
+          "hash": "J+r0V4K7U/4zezYVZuxmXg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Specific.SpecificException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Specific.SpecificException.html",
+          "hash": "Vh4RUAHz31UK+gXuxJEh4Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Specific.SpecificFixed.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Specific.SpecificFixed.html",
+          "hash": "WGG2o4cq67ITWTL1VgnwWQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Specific.SpecificReader-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Specific.SpecificReader-1.html",
+          "hash": "3uxN3uXNLc7AFGP/BrrSwQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Specific.SpecificWriter-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Specific.SpecificWriter-1.html",
+          "hash": "E0W6nTjxSsrbzHbJFMY39g=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.Specific.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.Specific.html",
+          "hash": "ZkP+xKmutv5Ej4fEjm5slw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.UnionSchema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.UnionSchema.html",
+          "hash": "+ZXBMrQjhQSPksrqiDbNug=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.UnnamedSchema.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.UnnamedSchema.html",
+          "hash": "v2IM+l/yrjZDa8/HaB9sYA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.msbuild.AvroBuildTask.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.msbuild.AvroBuildTask.html",
+          "hash": "F/hvMrS8ngtHEFyJBO6hjw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.msbuild.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.msbuild.html",
+          "hash": "xycN/0dSlTCWKLIW4+BT7Q=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Avro.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Avro.html",
+          "hash": "hZEo2k1MV0hfzia9kZ2gaA=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "s/FVO+4iRxHicVNKOCDbIg=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "wwzb3tXSGyebTMQqbs4kmQ=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "t90R/iPp5rKxZEm6KyePcA=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "xVlQaX7Tk85omoiWv3O+Ag=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "jubXUKdfSD8NRh7H99hBsw=="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "ob7LqWp4kTNLz+9W4omdTw=="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build"
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot suppport incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build"
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing"
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

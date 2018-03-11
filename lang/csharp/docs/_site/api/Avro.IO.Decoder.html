@@ -1,0 +1,845 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface Decoder
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface Decoder
+   ">
+    <meta name="generator" content="docfx 2.32.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Avro.IO.Decoder">
+  
+  
+  <h1 id="Avro_IO_Decoder" data-uid="Avro.IO.Decoder" class="text-break">Interface Decoder
+  </h1>
+  <div class="markdown level0 summary"><p>Decoder is used to decode Avro data on a stream. There are methods to read the Avro types on the stream. There are also
+methods to skip items, which are usually more efficient than reading, on the stream.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Avro.IO.html">Avro.IO</a></h6>
+  <h6><strong>Assembly</strong>: Avro.dll</h6>
+  <h5 id="Avro_IO_Decoder_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface Decoder</code></pre>
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_IO_Decoder_ReadArrayNext.md&amp;value=---%0Auid%3A%20Avro.IO.Decoder.ReadArrayNext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/IO/Decoder.cs/#L100">View Source</a>
+  </span>
+  <a id="Avro_IO_Decoder_ReadArrayNext_" data-uid="Avro.IO.Decoder.ReadArrayNext*"></a>
+  <h4 id="Avro_IO_Decoder_ReadArrayNext" data-uid="Avro.IO.Decoder.ReadArrayNext">ReadArrayNext()</h4>
+  <div class="markdown level1 summary"><p>See ReadArrayStart().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">long ReadArrayNext()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><p>The number of array entries in the next chunk, 0 if there are no more entries.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_IO_Decoder_ReadArrayStart.md&amp;value=---%0Auid%3A%20Avro.IO.Decoder.ReadArrayStart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/IO/Decoder.cs/#L94">View Source</a>
+  </span>
+  <a id="Avro_IO_Decoder_ReadArrayStart_" data-uid="Avro.IO.Decoder.ReadArrayStart*"></a>
+  <h4 id="Avro_IO_Decoder_ReadArrayStart" data-uid="Avro.IO.Decoder.ReadArrayStart">ReadArrayStart()</h4>
+  <div class="markdown level1 summary"><p>Starts reading the array Avro type. This, together with ReadArrayNext() is used to read the
+items from Avro array. This returns the number of entries in the initial chunk. After consuming
+the chunk, the client should call ReadArrayNext() to get the number of entries in the next
+chunk. The client should repeat the procedure until there are no more entries in the array.</p>
+<p>for (int n = decoder.ReadArrayStart(); n &gt; 0; n = decoder.ReadArrayNext())
+{
+// Read one array entry.
+}</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">long ReadArrayStart()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><p>The number of entries in the initial chunk, 0 if the array is empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_IO_Decoder_ReadBoolean.md&amp;value=---%0Auid%3A%20Avro.IO.Decoder.ReadBoolean%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/IO/Decoder.cs/#L38">View Source</a>
+  </span>
+  <a id="Avro_IO_Decoder_ReadBoolean_" data-uid="Avro.IO.Decoder.ReadBoolean*"></a>
+  <h4 id="Avro_IO_Decoder_ReadBoolean" data-uid="Avro.IO.Decoder.ReadBoolean">ReadBoolean()</h4>
+  <div class="markdown level1 summary"><p>Read a boolean Avro type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">bool ReadBoolean()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>The boolean just read</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_IO_Decoder_ReadBytes.md&amp;value=---%0Auid%3A%20Avro.IO.Decoder.ReadBytes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/IO/Decoder.cs/#L68">View Source</a>
+  </span>
+  <a id="Avro_IO_Decoder_ReadBytes_" data-uid="Avro.IO.Decoder.ReadBytes*"></a>
+  <h4 id="Avro_IO_Decoder_ReadBytes" data-uid="Avro.IO.Decoder.ReadBytes">ReadBytes()</h4>
+  <div class="markdown level1 summary"><p>Reads the bytes Avro type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">byte[] ReadBytes()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><p>The bytes just read</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_IO_Decoder_ReadDouble.md&amp;value=---%0Auid%3A%20Avro.IO.Decoder.ReadDouble%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/IO/Decoder.cs/#L62">View Source</a>
+  </span>
+  <a id="Avro_IO_Decoder_ReadDouble_" data-uid="Avro.IO.Decoder.ReadDouble*"></a>
+  <h4 id="Avro_IO_Decoder_ReadDouble" data-uid="Avro.IO.Decoder.ReadDouble">ReadDouble()</h4>
+  <div class="markdown level1 summary"><p>Reads a double Avro type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">double ReadDouble()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Double</span></td>
+        <td><p>The double just read</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_IO_Decoder_ReadEnum.md&amp;value=---%0Auid%3A%20Avro.IO.Decoder.ReadEnum%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/IO/Decoder.cs/#L80">View Source</a>
+  </span>
+  <a id="Avro_IO_Decoder_ReadEnum_" data-uid="Avro.IO.Decoder.ReadEnum*"></a>
+  <h4 id="Avro_IO_Decoder_ReadEnum" data-uid="Avro.IO.Decoder.ReadEnum">ReadEnum()</h4>
+  <div class="markdown level1 summary"><p>Reads an enum AvroType</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int ReadEnum()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The enum just read</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_IO_Decoder_ReadFixed_System_Byte___.md&amp;value=---%0Auid%3A%20Avro.IO.Decoder.ReadFixed(System.Byte%5B%5D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/IO/Decoder.cs/#L131">View Source</a>
+  </span>
+  <a id="Avro_IO_Decoder_ReadFixed_" data-uid="Avro.IO.Decoder.ReadFixed*"></a>
+  <h4 id="Avro_IO_Decoder_ReadFixed_System_Byte___" data-uid="Avro.IO.Decoder.ReadFixed(System.Byte[])">ReadFixed(Byte[])</h4>
+  <div class="markdown level1 summary"><p>A convenience method for ReadFixed(buffer, 0, buffer.Length);</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ReadFixed(byte[] buffer)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>The buffer to read into.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_IO_Decoder_ReadFixed_System_Byte___System_Int32_System_Int32_.md&amp;value=---%0Auid%3A%20Avro.IO.Decoder.ReadFixed(System.Byte%5B%5D%2CSystem.Int32%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/IO/Decoder.cs/#L139">View Source</a>
+  </span>
+  <a id="Avro_IO_Decoder_ReadFixed_" data-uid="Avro.IO.Decoder.ReadFixed*"></a>
+  <h4 id="Avro_IO_Decoder_ReadFixed_System_Byte___System_Int32_System_Int32_" data-uid="Avro.IO.Decoder.ReadFixed(System.Byte[],System.Int32,System.Int32)">ReadFixed(Byte[], Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Read a Fixed Avro type of length.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ReadFixed(byte[] buffer, int start, int length)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><span class="parametername">buffer</span></td>
+        <td><p>Buffer to read into</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">start</span></td>
+        <td><p>Starting position of buffer to read into</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">length</span></td>
+        <td><p>Number of bytes to read</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_IO_Decoder_ReadFloat.md&amp;value=---%0Auid%3A%20Avro.IO.Decoder.ReadFloat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/IO/Decoder.cs/#L56">View Source</a>
+  </span>
+  <a id="Avro_IO_Decoder_ReadFloat_" data-uid="Avro.IO.Decoder.ReadFloat*"></a>
+  <h4 id="Avro_IO_Decoder_ReadFloat" data-uid="Avro.IO.Decoder.ReadFloat">ReadFloat()</h4>
+  <div class="markdown level1 summary"><p>Reads a float Avro type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">float ReadFloat()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Single</span></td>
+        <td><p>The float just read</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_IO_Decoder_ReadInt.md&amp;value=---%0Auid%3A%20Avro.IO.Decoder.ReadInt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/IO/Decoder.cs/#L44">View Source</a>
+  </span>
+  <a id="Avro_IO_Decoder_ReadInt_" data-uid="Avro.IO.Decoder.ReadInt*"></a>
+  <h4 id="Avro_IO_Decoder_ReadInt" data-uid="Avro.IO.Decoder.ReadInt">ReadInt()</h4>
+  <div class="markdown level1 summary"><p>Reads an int Avro type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int ReadInt()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The int just read</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_IO_Decoder_ReadLong.md&amp;value=---%0Auid%3A%20Avro.IO.Decoder.ReadLong%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/IO/Decoder.cs/#L50">View Source</a>
+  </span>
+  <a id="Avro_IO_Decoder_ReadLong_" data-uid="Avro.IO.Decoder.ReadLong*"></a>
+  <h4 id="Avro_IO_Decoder_ReadLong" data-uid="Avro.IO.Decoder.ReadLong">ReadLong()</h4>
+  <div class="markdown level1 summary"><p>Reads a long Avro type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">long ReadLong()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><p>The long just read</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_IO_Decoder_ReadMapNext.md&amp;value=---%0Auid%3A%20Avro.IO.Decoder.ReadMapNext%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/IO/Decoder.cs/#L119">View Source</a>
+  </span>
+  <a id="Avro_IO_Decoder_ReadMapNext_" data-uid="Avro.IO.Decoder.ReadMapNext*"></a>
+  <h4 id="Avro_IO_Decoder_ReadMapNext" data-uid="Avro.IO.Decoder.ReadMapNext">ReadMapNext()</h4>
+  <div class="markdown level1 summary"><p>See ReadMapStart().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">long ReadMapNext()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><p>The number of map entries in the next chunk, 0 if there are no more entries.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_IO_Decoder_ReadMapStart.md&amp;value=---%0Auid%3A%20Avro.IO.Decoder.ReadMapStart%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/IO/Decoder.cs/#L113">View Source</a>
+  </span>
+  <a id="Avro_IO_Decoder_ReadMapStart_" data-uid="Avro.IO.Decoder.ReadMapStart*"></a>
+  <h4 id="Avro_IO_Decoder_ReadMapStart" data-uid="Avro.IO.Decoder.ReadMapStart">ReadMapStart()</h4>
+  <div class="markdown level1 summary"><p>Starts reading the map Avro type. This, together with ReadMapNext() is used to read the
+entries from Avro map. This returns the number of entries in the initial chunk. After consuming
+the chunk, the client should call ReadMapNext() to get the number of entriess in the next
+chunk. The client should repeat the procedure until there are no more entries in the array.
+for (int n = decoder.ReadMapStart(); n &gt; 0; n = decoder.ReadMapNext())
+{
+// Read one map entry.
+}</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">long ReadMapStart()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int64</span></td>
+        <td><p>The number of entries in the initial chunk, 0 if the map is empty.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_IO_Decoder_ReadNull.md&amp;value=---%0Auid%3A%20Avro.IO.Decoder.ReadNull%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/IO/Decoder.cs/#L32">View Source</a>
+  </span>
+  <a id="Avro_IO_Decoder_ReadNull_" data-uid="Avro.IO.Decoder.ReadNull*"></a>
+  <h4 id="Avro_IO_Decoder_ReadNull" data-uid="Avro.IO.Decoder.ReadNull">ReadNull()</h4>
+  <div class="markdown level1 summary"><p>Reads a null Avro type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void ReadNull()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_IO_Decoder_ReadString.md&amp;value=---%0Auid%3A%20Avro.IO.Decoder.ReadString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/IO/Decoder.cs/#L74">View Source</a>
+  </span>
+  <a id="Avro_IO_Decoder_ReadString_" data-uid="Avro.IO.Decoder.ReadString*"></a>
+  <h4 id="Avro_IO_Decoder_ReadString" data-uid="Avro.IO.Decoder.ReadString">ReadString()</h4>
+  <div class="markdown level1 summary"><p>Reads a string Avro type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string ReadString()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The string just read</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_IO_Decoder_ReadUnionIndex.md&amp;value=---%0Auid%3A%20Avro.IO.Decoder.ReadUnionIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/IO/Decoder.cs/#L125">View Source</a>
+  </span>
+  <a id="Avro_IO_Decoder_ReadUnionIndex_" data-uid="Avro.IO.Decoder.ReadUnionIndex*"></a>
+  <h4 id="Avro_IO_Decoder_ReadUnionIndex" data-uid="Avro.IO.Decoder.ReadUnionIndex">ReadUnionIndex()</h4>
+  <div class="markdown level1 summary"><p>Reads the index, which determines the type in an union Avro type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">int ReadUnionIndex()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The index of the type within the union.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_IO_Decoder_SkipBoolean.md&amp;value=---%0Auid%3A%20Avro.IO.Decoder.SkipBoolean%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/IO/Decoder.cs/#L149">View Source</a>
+  </span>
+  <a id="Avro_IO_Decoder_SkipBoolean_" data-uid="Avro.IO.Decoder.SkipBoolean*"></a>
+  <h4 id="Avro_IO_Decoder_SkipBoolean" data-uid="Avro.IO.Decoder.SkipBoolean">SkipBoolean()</h4>
+  <div class="markdown level1 summary"><p>Skips a boolean Avro type on the stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SkipBoolean()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_IO_Decoder_SkipBytes.md&amp;value=---%0Auid%3A%20Avro.IO.Decoder.SkipBytes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/IO/Decoder.cs/#L174">View Source</a>
+  </span>
+  <a id="Avro_IO_Decoder_SkipBytes_" data-uid="Avro.IO.Decoder.SkipBytes*"></a>
+  <h4 id="Avro_IO_Decoder_SkipBytes" data-uid="Avro.IO.Decoder.SkipBytes">SkipBytes()</h4>
+  <div class="markdown level1 summary"><p>Skips a bytes Avro type on the stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SkipBytes()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_IO_Decoder_SkipDouble.md&amp;value=---%0Auid%3A%20Avro.IO.Decoder.SkipDouble%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/IO/Decoder.cs/#L169">View Source</a>
+  </span>
+  <a id="Avro_IO_Decoder_SkipDouble_" data-uid="Avro.IO.Decoder.SkipDouble*"></a>
+  <h4 id="Avro_IO_Decoder_SkipDouble" data-uid="Avro.IO.Decoder.SkipDouble">SkipDouble()</h4>
+  <div class="markdown level1 summary"><p>Skips a double Avro type on the stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SkipDouble()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_IO_Decoder_SkipEnum.md&amp;value=---%0Auid%3A%20Avro.IO.Decoder.SkipEnum%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/IO/Decoder.cs/#L181">View Source</a>
+  </span>
+  <a id="Avro_IO_Decoder_SkipEnum_" data-uid="Avro.IO.Decoder.SkipEnum*"></a>
+  <h4 id="Avro_IO_Decoder_SkipEnum" data-uid="Avro.IO.Decoder.SkipEnum">SkipEnum()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SkipEnum()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_IO_Decoder_SkipFixed_System_Int32_.md&amp;value=---%0Auid%3A%20Avro.IO.Decoder.SkipFixed(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/IO/Decoder.cs/#L185">View Source</a>
+  </span>
+  <a id="Avro_IO_Decoder_SkipFixed_" data-uid="Avro.IO.Decoder.SkipFixed*"></a>
+  <h4 id="Avro_IO_Decoder_SkipFixed_System_Int32_" data-uid="Avro.IO.Decoder.SkipFixed(System.Int32)">SkipFixed(Int32)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SkipFixed(int len)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">len</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_IO_Decoder_SkipFloat.md&amp;value=---%0Auid%3A%20Avro.IO.Decoder.SkipFloat%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/IO/Decoder.cs/#L164">View Source</a>
+  </span>
+  <a id="Avro_IO_Decoder_SkipFloat_" data-uid="Avro.IO.Decoder.SkipFloat*"></a>
+  <h4 id="Avro_IO_Decoder_SkipFloat" data-uid="Avro.IO.Decoder.SkipFloat">SkipFloat()</h4>
+  <div class="markdown level1 summary"><p>Skips a float Avro type on the stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SkipFloat()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_IO_Decoder_SkipInt.md&amp;value=---%0Auid%3A%20Avro.IO.Decoder.SkipInt%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/IO/Decoder.cs/#L154">View Source</a>
+  </span>
+  <a id="Avro_IO_Decoder_SkipInt_" data-uid="Avro.IO.Decoder.SkipInt*"></a>
+  <h4 id="Avro_IO_Decoder_SkipInt" data-uid="Avro.IO.Decoder.SkipInt">SkipInt()</h4>
+  <div class="markdown level1 summary"><p>Skips a int Avro type on the stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SkipInt()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_IO_Decoder_SkipLong.md&amp;value=---%0Auid%3A%20Avro.IO.Decoder.SkipLong%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/IO/Decoder.cs/#L159">View Source</a>
+  </span>
+  <a id="Avro_IO_Decoder_SkipLong_" data-uid="Avro.IO.Decoder.SkipLong*"></a>
+  <h4 id="Avro_IO_Decoder_SkipLong" data-uid="Avro.IO.Decoder.SkipLong">SkipLong()</h4>
+  <div class="markdown level1 summary"><p>Skips a long Avro type on the stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SkipLong()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_IO_Decoder_SkipNull.md&amp;value=---%0Auid%3A%20Avro.IO.Decoder.SkipNull%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/IO/Decoder.cs/#L144">View Source</a>
+  </span>
+  <a id="Avro_IO_Decoder_SkipNull_" data-uid="Avro.IO.Decoder.SkipNull*"></a>
+  <h4 id="Avro_IO_Decoder_SkipNull" data-uid="Avro.IO.Decoder.SkipNull">SkipNull()</h4>
+  <div class="markdown level1 summary"><p>Skips a null Avro type on the stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SkipNull()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_IO_Decoder_SkipString.md&amp;value=---%0Auid%3A%20Avro.IO.Decoder.SkipString%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/IO/Decoder.cs/#L179">View Source</a>
+  </span>
+  <a id="Avro_IO_Decoder_SkipString_" data-uid="Avro.IO.Decoder.SkipString*"></a>
+  <h4 id="Avro_IO_Decoder_SkipString" data-uid="Avro.IO.Decoder.SkipString">SkipString()</h4>
+  <div class="markdown level1 summary"><p>Skips a string Avro type on the stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SkipString()</code></pre>
+  </div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_IO_Decoder_SkipUnionIndex.md&amp;value=---%0Auid%3A%20Avro.IO.Decoder.SkipUnionIndex%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/IO/Decoder.cs/#L183">View Source</a>
+  </span>
+  <a id="Avro_IO_Decoder_SkipUnionIndex_" data-uid="Avro.IO.Decoder.SkipUnionIndex*"></a>
+  <h4 id="Avro_IO_Decoder_SkipUnionIndex" data-uid="Avro.IO.Decoder.SkipUnionIndex">SkipUnionIndex()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void SkipUnionIndex()</code></pre>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_IO_Decoder.md&amp;value=---%0Auid%3A%20Avro.IO.Decoder%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/IO/Decoder.cs/#L27" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

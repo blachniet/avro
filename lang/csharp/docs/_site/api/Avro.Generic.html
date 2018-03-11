@@ -1,0 +1,200 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace Avro.Generic
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace Avro.Generic
+   ">
+    <meta name="generator" content="docfx 2.32.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Avro.Generic">
+  
+  <h1 id="Avro_Generic" data-uid="Avro.Generic" class="text-break">Namespace Avro.Generic
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+      <h4><a class="xref" href="Avro.Generic.DefaultReader.html">DefaultReader</a></h4>
+      <section><p>The default implementation for the generic reader. It constructs new .NET objects for avro objects on the
+stream and returns the .NET object. Users can directly use this class or, if they want to customize the
+object types for differnt Avro schema types, can derive from this class. There are enough hooks in this
+class to allow customization.</p>
+</section>
+      <h4><a class="xref" href="Avro.Generic.DefaultWriter.html">DefaultWriter</a></h4>
+      <section><p>A General purpose writer for serializing objects into a Stream using
+Avro. This class implements a default way of serializing objects. But
+one can derive a class from this and override different methods to
+acheive results that are different from the default implementation.</p>
+</section>
+      <h4><a class="xref" href="Avro.Generic.GenericDatumReader-1.html">GenericDatumReader&lt;T&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Avro.Generic.GenericDatumWriter-1.html">GenericDatumWriter&lt;T&gt;</a></h4>
+      <section><p>PreresolvingDatumWriter for writing data from GenericRecords or primitive types.
+<a class="xref" href="Avro.Generic.PreresolvingDatumWriter-1.html">PreresolvingDatumWriter&lt;T&gt;</a></p>
+</section>
+      <h4><a class="xref" href="Avro.Generic.GenericEnum.html">GenericEnum</a></h4>
+      <section><p>The defualt class to hold values for enum schema in GenericReader and GenericWriter.</p>
+</section>
+      <h4><a class="xref" href="Avro.Generic.GenericFixed.html">GenericFixed</a></h4>
+      <section><p>The default type used by GenericReader and GenericWriter for objects for FixedSchema</p>
+</section>
+      <h4><a class="xref" href="Avro.Generic.GenericReader-1.html">GenericReader&lt;T&gt;</a></h4>
+      <section><p>A general purpose reader of data from avro streams. This can optionally resolve if the reader&apos;s and writer&apos;s
+schemas are different. This class is a wrapper around DefaultReader and offers a little more type safety. The default reader
+has the flexibility to return any type of object for each read call because the Read() method is generic. This
+class on the other hand can only return a single type because the type is a parameter to the class. Any
+user defined extension should, however, be done to DefaultReader. This class is sealed.</p>
+</section>
+      <h4><a class="xref" href="Avro.Generic.GenericRecord.html">GenericRecord</a></h4>
+      <section><p>The default type used by GenericReader and GenericWriter for RecordSchema.</p>
+</section>
+      <h4><a class="xref" href="Avro.Generic.GenericWriter-1.html">GenericWriter&lt;T&gt;</a></h4>
+      <section><p>A typesafe wrapper around DefaultWriter. While a specific object of DefaultWriter
+allows the client to serialize a generic type, an object of this class allows
+only a single type of object to be serialized through it.</p>
+</section>
+      <h4><a class="xref" href="Avro.Generic.PreresolvingDatumReader-1.html">PreresolvingDatumReader&lt;T&gt;</a></h4>
+      <section><p>A general purpose reader of data from avro streams. This reader analyzes and resolves the reader and writer schemas
+when constructed so that reads can be more efficient. Once constructed, a reader can be reused or shared among threads
+to avoid incurring more resolution costs.</p>
+</section>
+      <h4><a class="xref" href="Avro.Generic.PreresolvingDatumWriter-1.html">PreresolvingDatumWriter&lt;T&gt;</a></h4>
+      <section><p>A general purpose writer of data from avro streams. This writer analyzes the writer schema
+when constructed so that writes can be more efficient. Once constructed, a writer can be reused or shared among threads
+to avoid incurring more resolution costs.</p>
+</section>
+      <h4><a class="xref" href="Avro.Generic.PreresolvingDatumWriter-1.DictionaryMapAccess.html">PreresolvingDatumWriter&lt;T&gt;.DictionaryMapAccess</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Avro.Generic.PreresolvingDatumWriter-1.RecordFieldWriter.html">PreresolvingDatumWriter&lt;T&gt;.RecordFieldWriter</a></h4>
+      <section></section>
+    <h3 id="interfaces">Interfaces
+  </h3>
+      <h4><a class="xref" href="Avro.Generic.DatumReader-1.html">DatumReader&lt;T&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Avro.Generic.DatumWriter-1.html">DatumWriter&lt;T&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Avro.Generic.PreresolvingDatumReader-1.ArrayAccess.html">PreresolvingDatumReader&lt;T&gt;.ArrayAccess</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Avro.Generic.PreresolvingDatumReader-1.EnumAccess.html">PreresolvingDatumReader&lt;T&gt;.EnumAccess</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Avro.Generic.PreresolvingDatumReader-1.FixedAccess.html">PreresolvingDatumReader&lt;T&gt;.FixedAccess</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Avro.Generic.PreresolvingDatumReader-1.MapAccess.html">PreresolvingDatumReader&lt;T&gt;.MapAccess</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Avro.Generic.PreresolvingDatumReader-1.RecordAccess.html">PreresolvingDatumReader&lt;T&gt;.RecordAccess</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Avro.Generic.PreresolvingDatumWriter-1.ArrayAccess.html">PreresolvingDatumWriter&lt;T&gt;.ArrayAccess</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Avro.Generic.PreresolvingDatumWriter-1.EnumAccess.html">PreresolvingDatumWriter&lt;T&gt;.EnumAccess</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Avro.Generic.PreresolvingDatumWriter-1.MapAccess.html">PreresolvingDatumWriter&lt;T&gt;.MapAccess</a></h4>
+      <section></section>
+    <h3 id="delegates">Delegates
+  </h3>
+      <h4><a class="xref" href="Avro.Generic.PreresolvingDatumReader-1.ReadItem.html">PreresolvingDatumReader&lt;T&gt;.ReadItem</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Avro.Generic.PreresolvingDatumWriter-1.WriteItem.html">PreresolvingDatumWriter&lt;T&gt;.WriteItem</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Avro.Generic.Reader-1.html">Reader&lt;T&gt;</a></h4>
+      <section></section>
+      <h4><a class="xref" href="Avro.Generic.Writer-1.html">Writer&lt;T&gt;</a></h4>
+      <section></section>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

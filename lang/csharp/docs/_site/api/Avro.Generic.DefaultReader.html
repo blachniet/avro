@@ -1,0 +1,1735 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DefaultReader
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DefaultReader
+   ">
+    <meta name="generator" content="docfx 2.32.2.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Avro.Generic.DefaultReader">
+  
+  
+  <h1 id="Avro_Generic_DefaultReader" data-uid="Avro.Generic.DefaultReader" class="text-break">Class DefaultReader
+  </h1>
+  <div class="markdown level0 summary"><p>The default implementation for the generic reader. It constructs new .NET objects for avro objects on the
+stream and returns the .NET object. Users can directly use this class or, if they want to customize the
+object types for differnt Avro schema types, can derive from this class. There are enough hooks in this
+class to allow customization.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DefaultReader</span></div>
+      <div class="level2"><a class="xref" href="Avro.Specific.SpecificDefaultReader.html">SpecificDefaultReader</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Avro.Generic.html">Avro.Generic</a></h6>
+  <h6><strong>Assembly</strong>: Avro.dll</h6>
+  <h5 id="Avro_Generic_DefaultReader_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DefaultReader</code></pre>
+  </div>
+  <h5 id="Avro_Generic_DefaultReader_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><table><thead><tr><th>Avro Type</th><th>.NET Type</th></tr></thead><tbody><tr><td>null</td><td>null reference</td></tr></tbody></table>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultReader__ctor_Avro_Schema_Avro_Schema_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultReader.%23ctor(Avro.Schema%2CAvro.Schema)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericReader.cs/#L94">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultReader__ctor_" data-uid="Avro.Generic.DefaultReader.#ctor*"></a>
+  <h4 id="Avro_Generic_DefaultReader__ctor_Avro_Schema_Avro_Schema_" data-uid="Avro.Generic.DefaultReader.#ctor(Avro.Schema,Avro.Schema)">DefaultReader(Schema, Schema)</h4>
+  <div class="markdown level1 summary"><p>Constructs the default reader for the given schemas using the DefaultReader. If the
+reader&apos;s and writer&apos;s schemas are different this class performs the resolution.
+This default implemenation maps Avro types to .NET types as follows:</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DefaultReader(Schema writerSchema, Schema readerSchema)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.Schema.html">Schema</a></td>
+        <td><span class="parametername">writerSchema</span></td>
+        <td><p>The schema used while generating the data</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.Schema.html">Schema</a></td>
+        <td><span class="parametername">readerSchema</span></td>
+        <td><p>The schema desired by the reader</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultReader_ReaderSchema.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultReader.ReaderSchema%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericReader.cs/#L83">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultReader_ReaderSchema_" data-uid="Avro.Generic.DefaultReader.ReaderSchema*"></a>
+  <h4 id="Avro_Generic_DefaultReader_ReaderSchema" data-uid="Avro.Generic.DefaultReader.ReaderSchema">ReaderSchema</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Schema ReaderSchema { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.Schema.html">Schema</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultReader_WriterSchema.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultReader.WriterSchema%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericReader.cs/#L84">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultReader_WriterSchema_" data-uid="Avro.Generic.DefaultReader.WriterSchema*"></a>
+  <h4 id="Avro_Generic_DefaultReader_WriterSchema" data-uid="Avro.Generic.DefaultReader.WriterSchema">WriterSchema</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Schema WriterSchema { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.Schema.html">Schema</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultReader_AddField_System_Object_System_String_System_Int32_System_Object_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultReader.AddField(System.Object%2CSystem.String%2CSystem.Int32%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericReader.cs/#L312">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultReader_AddField_" data-uid="Avro.Generic.DefaultReader.AddField*"></a>
+  <h4 id="Avro_Generic_DefaultReader_AddField_System_Object_System_String_System_Int32_System_Object_" data-uid="Avro.Generic.DefaultReader.AddField(System.Object,System.String,System.Int32,System.Object)">AddField(Object, String, Int32, Object)</h4>
+  <div class="markdown level1 summary"><p>Used by the default implementation of ReadRecord() to add a field to a record object. The derived
+classes can override this to suit their own implementation of the record object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void AddField(object record, string fieldName, int fieldPos, object fieldValue)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">record</span></td>
+        <td><p>The record object to be probed into. This is guaranteed to be one that was returned
+by a previous call to CreateRecord.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fieldName</span></td>
+        <td><p>The name of the field to probe.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">fieldPos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">fieldValue</span></td>
+        <td><p>The value to be added for the field</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultReader_AddMapEntry_System_Object_System_String_System_Object_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultReader.AddMapEntry(System.Object%2CSystem.String%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericReader.cs/#L486">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultReader_AddMapEntry_" data-uid="Avro.Generic.DefaultReader.AddMapEntry*"></a>
+  <h4 id="Avro_Generic_DefaultReader_AddMapEntry_System_Object_System_String_System_Object_" data-uid="Avro.Generic.DefaultReader.AddMapEntry(System.Object,System.String,System.Object)">AddMapEntry(Object, String, Object)</h4>
+  <div class="markdown level1 summary"><p>Adds an entry to the map.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void AddMapEntry(object map, string key, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">map</span></td>
+        <td><p>A map object, which is guaranteed to be one returned by a previous call to CreateMap().</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">key</span></td>
+        <td><p>The key to add.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to add.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultReader_CreateArray_System_Object_Avro_ArraySchema_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultReader.CreateArray(System.Object%2CAvro.ArraySchema)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericReader.cs/#L385">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultReader_CreateArray_" data-uid="Avro.Generic.DefaultReader.CreateArray*"></a>
+  <h4 id="Avro_Generic_DefaultReader_CreateArray_System_Object_Avro_ArraySchema_" data-uid="Avro.Generic.DefaultReader.CreateArray(System.Object,Avro.ArraySchema)">CreateArray(Object, ArraySchema)</h4>
+  <div class="markdown level1 summary"><p>Creates a new array object. The initial size of the object could be anything. The users
+should use GetArraySize() to determine the size. The default implementation creates an <code>object[]</code>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual object CreateArray(object reuse, ArraySchema rs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">reuse</span></td>
+        <td><p>If appropriate use this instead of creating a new one.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.ArraySchema.html">ArraySchema</a></td>
+        <td><span class="parametername">rs</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>An object suitable to deserialize an avro array</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultReader_CreateEnum_System_Object_Avro_EnumSchema_System_String_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultReader.CreateEnum(System.Object%2CAvro.EnumSchema%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericReader.cs/#L337">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultReader_CreateEnum_" data-uid="Avro.Generic.DefaultReader.CreateEnum*"></a>
+  <h4 id="Avro_Generic_DefaultReader_CreateEnum_System_Object_Avro_EnumSchema_System_String_" data-uid="Avro.Generic.DefaultReader.CreateEnum(System.Object,Avro.EnumSchema,System.String)">CreateEnum(Object, EnumSchema, String)</h4>
+  <div class="markdown level1 summary"><p>Used by the default implementation of ReadEnum to construct a new enum object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual object CreateEnum(object reuse, EnumSchema es, string symbol)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">reuse</span></td>
+        <td><p>If appropriate, use this enum object instead of a new one.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.EnumSchema.html">EnumSchema</a></td>
+        <td><span class="parametername">es</span></td>
+        <td><p>The enum schema used by the reader.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">symbol</span></td>
+        <td><p>The symbol that needs to be used.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The default implemenation returns a GenericEnum.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultReader_CreateFixed_System_Object_Avro_FixedSchema_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultReader.CreateFixed(System.Object%2CAvro.FixedSchema)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericReader.cs/#L544">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultReader_CreateFixed_" data-uid="Avro.Generic.DefaultReader.CreateFixed*"></a>
+  <h4 id="Avro_Generic_DefaultReader_CreateFixed_System_Object_Avro_FixedSchema_" data-uid="Avro.Generic.DefaultReader.CreateFixed(System.Object,Avro.FixedSchema)">CreateFixed(Object, FixedSchema)</h4>
+  <div class="markdown level1 summary"><p>Returns a fixed object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual object CreateFixed(object reuse, FixedSchema rs)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">reuse</span></td>
+        <td><p>If appropriate, uses this object instead of creating a new one.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.FixedSchema.html">FixedSchema</a></td>
+        <td><span class="parametername">rs</span></td>
+        <td><p>The reader&apos;s FixedSchema.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>A fixed object with an appropriate buffer.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultReader_CreateMap_System_Object_Avro_MapSchema_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultReader.CreateMap(System.Object%2CAvro.MapSchema)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericReader.cs/#L469">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultReader_CreateMap_" data-uid="Avro.Generic.DefaultReader.CreateMap*"></a>
+  <h4 id="Avro_Generic_DefaultReader_CreateMap_System_Object_Avro_MapSchema_" data-uid="Avro.Generic.DefaultReader.CreateMap(System.Object,Avro.MapSchema)">CreateMap(Object, MapSchema)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual object CreateMap(object reuse, MapSchema ms)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">reuse</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.MapSchema.html">MapSchema</a></td>
+        <td><span class="parametername">ms</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultReader_CreateRecord_System_Object_Avro_RecordSchema_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultReader.CreateRecord(System.Object%2CAvro.RecordSchema)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericReader.cs/#L282">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultReader_CreateRecord_" data-uid="Avro.Generic.DefaultReader.CreateRecord*"></a>
+  <h4 id="Avro_Generic_DefaultReader_CreateRecord_System_Object_Avro_RecordSchema_" data-uid="Avro.Generic.DefaultReader.CreateRecord(System.Object,Avro.RecordSchema)">CreateRecord(Object, RecordSchema)</h4>
+  <div class="markdown level1 summary"><p>Creates a new record object. Derived classes can override this to return an object of their choice.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual object CreateRecord(object reuse, RecordSchema readerSchema)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">reuse</span></td>
+        <td><p>If appropriate, will reuse this object instead of constructing a new one</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.RecordSchema.html">RecordSchema</a></td>
+        <td><span class="parametername">readerSchema</span></td>
+        <td><p>The schema the reader is using</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultReader_findBranch_Avro_UnionSchema_Avro_Schema_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultReader.findBranch(Avro.UnionSchema%2CAvro.Schema)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericReader.cs/#L624">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultReader_findBranch_" data-uid="Avro.Generic.DefaultReader.findBranch*"></a>
+  <h4 id="Avro_Generic_DefaultReader_findBranch_Avro_UnionSchema_Avro_Schema_" data-uid="Avro.Generic.DefaultReader.findBranch(Avro.UnionSchema,Avro.Schema)">findBranch(UnionSchema, Schema)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static Schema findBranch(UnionSchema us, Schema s)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.UnionSchema.html">UnionSchema</a></td>
+        <td><span class="parametername">us</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.Schema.html">Schema</a></td>
+        <td><span class="parametername">s</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.Schema.html">Schema</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultReader_GetArrayElement_System_Object_System_Int32_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultReader.GetArrayElement(System.Object%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericReader.cs/#L434">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultReader_GetArrayElement_" data-uid="Avro.Generic.DefaultReader.GetArrayElement*"></a>
+  <h4 id="Avro_Generic_DefaultReader_GetArrayElement_System_Object_System_Int32_" data-uid="Avro.Generic.DefaultReader.GetArrayElement(System.Object,System.Int32)">GetArrayElement(Object, Int32)</h4>
+  <div class="markdown level1 summary"><p>Returns the element at the given index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual object GetArrayElement(object array, int index)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">array</span></td>
+        <td><p>Array object whose size is required. This is guaranteed to be somthing returned by
+a previous call to CreateArray().</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index to look into.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The object the given index. Null if no object has been assigned to that index.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultReader_GetArraySize_System_Object_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultReader.GetArraySize(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericReader.cs/#L396">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultReader_GetArraySize_" data-uid="Avro.Generic.DefaultReader.GetArraySize*"></a>
+  <h4 id="Avro_Generic_DefaultReader_GetArraySize_System_Object_" data-uid="Avro.Generic.DefaultReader.GetArraySize(System.Object)">GetArraySize(Object)</h4>
+  <div class="markdown level1 summary"><p>Returns the size of the given array object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual int GetArraySize(object array)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">array</span></td>
+        <td><p>Array object whose size is required. This is guaranteed to be somthing returned by
+a previous call to CreateArray().</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><p>The size of the array</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultReader_GetFixedBuffer_System_Object_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultReader.GetFixedBuffer(System.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericReader.cs/#L556">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultReader_GetFixedBuffer_" data-uid="Avro.Generic.DefaultReader.GetFixedBuffer*"></a>
+  <h4 id="Avro_Generic_DefaultReader_GetFixedBuffer_System_Object_" data-uid="Avro.Generic.DefaultReader.GetFixedBuffer(System.Object)">GetFixedBuffer(Object)</h4>
+  <div class="markdown level1 summary"><p>Returns a buffer of appropriate size to read data into.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual byte[] GetFixedBuffer(object f)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">f</span></td>
+        <td><p>The fixed object. It is guaranteed that this is something that has been previously
+returned by CreateFixed</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Byte</span>[]</td>
+        <td><p>A byte buffer of fixed&apos;s size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultReader_Read_System_Object_Avro_Schema_Avro_Schema_Avro_IO_Decoder_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultReader.Read(System.Object%2CAvro.Schema%2CAvro.Schema%2CAvro.IO.Decoder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericReader.cs/#L117">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultReader_Read_" data-uid="Avro.Generic.DefaultReader.Read*"></a>
+  <h4 id="Avro_Generic_DefaultReader_Read_System_Object_Avro_Schema_Avro_Schema_Avro_IO_Decoder_" data-uid="Avro.Generic.DefaultReader.Read(System.Object,Avro.Schema,Avro.Schema,Avro.IO.Decoder)">Read(Object, Schema, Schema, Decoder)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object Read(object reuse, Schema writerSchema, Schema readerSchema, Decoder d)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">reuse</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.Schema.html">Schema</a></td>
+        <td><span class="parametername">writerSchema</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.Schema.html">Schema</a></td>
+        <td><span class="parametername">readerSchema</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.IO.Decoder.html">Decoder</a></td>
+        <td><span class="parametername">d</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultReader_Read__1___0_Avro_IO_Decoder_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultReader.Read%60%601(%60%600%2CAvro.IO.Decoder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericReader.cs/#L109">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultReader_Read_" data-uid="Avro.Generic.DefaultReader.Read*"></a>
+  <h4 id="Avro_Generic_DefaultReader_Read__1___0_Avro_IO_Decoder_" data-uid="Avro.Generic.DefaultReader.Read``1(``0,Avro.IO.Decoder)">Read&lt;T&gt;(T, Decoder)</h4>
+  <div class="markdown level1 summary"><p>Reads an object off the stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public T Read&lt;T&gt;(T reuse, Decoder decoder)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">reuse</span></td>
+        <td><p>If not null, the implemenation will try to use to return the object</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.IO.Decoder.html">Decoder</a></td>
+        <td><span class="parametername">decoder</span></td>
+        <td><p>The decoder for deserialization</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>The type of object to read. A single schema typically returns an object of a single .NET class.
+The only exception is UnionSchema, which can return a object of different types based on the branch selected.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultReader_Read__1_Avro_Schema_Type_Avro_Schema_Avro_Generic_Reader___0__.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultReader.Read%60%601(Avro.Schema.Type%2CAvro.Schema%2CAvro.Generic.Reader%7B%60%600%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericReader.cs/#L218">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultReader_Read_" data-uid="Avro.Generic.DefaultReader.Read*"></a>
+  <h4 id="Avro_Generic_DefaultReader_Read__1_Avro_Schema_Type_Avro_Schema_Avro_Generic_Reader___0__" data-uid="Avro.Generic.DefaultReader.Read``1(Avro.Schema.Type,Avro.Schema,Avro.Generic.Reader{``0})">Read&lt;S&gt;(Schema.Type, Schema, Reader&lt;S&gt;)</h4>
+  <div class="markdown level1 summary"><p>A generic function to read primitive types</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected S Read&lt;S&gt;(Schema.Type tag, Schema readerSchema, Reader&lt;S&gt; reader)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.Schema.Type.html">Schema.Type</a></td>
+        <td><span class="parametername">tag</span></td>
+        <td><p>The Avro type tag for the object on the stream</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.Schema.html">Schema</a></td>
+        <td><span class="parametername">readerSchema</span></td>
+        <td><p>A schema compatible to the Avro type</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.Generic.Reader-1.html">Reader</a>&lt;S&gt;</td>
+        <td><span class="parametername">reader</span></td>
+        <td><p>A function that can read the avro type from the stream</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">S</span></td>
+        <td><p>The primitive type just read</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">S</span></td>
+        <td><p>The .NET type to read</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultReader_ReadArray_System_Object_Avro_ArraySchema_Avro_Schema_Avro_IO_Decoder_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultReader.ReadArray(System.Object%2CAvro.ArraySchema%2CAvro.Schema%2CAvro.IO.Decoder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericReader.cs/#L361">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultReader_ReadArray_" data-uid="Avro.Generic.DefaultReader.ReadArray*"></a>
+  <h4 id="Avro_Generic_DefaultReader_ReadArray_System_Object_Avro_ArraySchema_Avro_Schema_Avro_IO_Decoder_" data-uid="Avro.Generic.DefaultReader.ReadArray(System.Object,Avro.ArraySchema,Avro.Schema,Avro.IO.Decoder)">ReadArray(Object, ArraySchema, Schema, Decoder)</h4>
+  <div class="markdown level1 summary"><p>Deserializes an array and returns an array object. It uses CreateArray() and works on it before returning it.
+It also uses GetArraySize(), ResizeArray(), SetArrayElement() and GetArrayElement() methods. Derived classes can
+override these methods to customize their behavior.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual object ReadArray(object reuse, ArraySchema writerSchema, Schema readerSchema, Decoder d)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">reuse</span></td>
+        <td><p>If appropriate, uses this instead of creating a new array object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.ArraySchema.html">ArraySchema</a></td>
+        <td><span class="parametername">writerSchema</span></td>
+        <td><p>The schema used by the writer.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.Schema.html">Schema</a></td>
+        <td><span class="parametername">readerSchema</span></td>
+        <td><p>The schema that the reader uses.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.IO.Decoder.html">Decoder</a></td>
+        <td><span class="parametername">d</span></td>
+        <td><p>The decoder for deserialization.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The deserialized array object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultReader_ReadEnum_System_Object_Avro_EnumSchema_Avro_Schema_Avro_IO_Decoder_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultReader.ReadEnum(System.Object%2CAvro.EnumSchema%2CAvro.Schema%2CAvro.IO.Decoder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericReader.cs/#L325">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultReader_ReadEnum_" data-uid="Avro.Generic.DefaultReader.ReadEnum*"></a>
+  <h4 id="Avro_Generic_DefaultReader_ReadEnum_System_Object_Avro_EnumSchema_Avro_Schema_Avro_IO_Decoder_" data-uid="Avro.Generic.DefaultReader.ReadEnum(System.Object,Avro.EnumSchema,Avro.Schema,Avro.IO.Decoder)">ReadEnum(Object, EnumSchema, Schema, Decoder)</h4>
+  <div class="markdown level1 summary"><p>Deserializes a enum. Uses CreateEnum to construct the new enum object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual object ReadEnum(object reuse, EnumSchema writerSchema, Schema readerSchema, Decoder d)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">reuse</span></td>
+        <td><p>If appropirate, uses this instead of creating a new enum object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.EnumSchema.html">EnumSchema</a></td>
+        <td><span class="parametername">writerSchema</span></td>
+        <td><p>The schema the writer used while writing the enum</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.Schema.html">Schema</a></td>
+        <td><span class="parametername">readerSchema</span></td>
+        <td><p>The schema the reader is using</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.IO.Decoder.html">Decoder</a></td>
+        <td><span class="parametername">d</span></td>
+        <td><p>The decoder for deserialization.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>An enum object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultReader_ReadFixed_System_Object_Avro_FixedSchema_Avro_Schema_Avro_IO_Decoder_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultReader.ReadFixed(System.Object%2CAvro.FixedSchema%2CAvro.Schema%2CAvro.IO.Decoder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericReader.cs/#L523">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultReader_ReadFixed_" data-uid="Avro.Generic.DefaultReader.ReadFixed*"></a>
+  <h4 id="Avro_Generic_DefaultReader_ReadFixed_System_Object_Avro_FixedSchema_Avro_Schema_Avro_IO_Decoder_" data-uid="Avro.Generic.DefaultReader.ReadFixed(System.Object,Avro.FixedSchema,Avro.Schema,Avro.IO.Decoder)">ReadFixed(Object, FixedSchema, Schema, Decoder)</h4>
+  <div class="markdown level1 summary"><p>Deserializes a fixed object and returns the object. The default implementation uses CreateFixed()
+and GetFixedBuffer() and returns what CreateFixed() returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual object ReadFixed(object reuse, FixedSchema writerSchema, Schema readerSchema, Decoder d)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">reuse</span></td>
+        <td><p>If appropriate, uses this object instead of creating a new one.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.FixedSchema.html">FixedSchema</a></td>
+        <td><span class="parametername">writerSchema</span></td>
+        <td><p>The FixedSchema the writer used during serialization.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.Schema.html">Schema</a></td>
+        <td><span class="parametername">readerSchema</span></td>
+        <td><p>The schema that the readr uses. Must be a FixedSchema with the same
+size as the writerSchema.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.IO.Decoder.html">Decoder</a></td>
+        <td><span class="parametername">d</span></td>
+        <td><p>The decoder for deserialization.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The deserilized object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultReader_ReadMap_System_Object_Avro_MapSchema_Avro_Schema_Avro_IO_Decoder_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultReader.ReadMap(System.Object%2CAvro.MapSchema%2CAvro.Schema%2CAvro.IO.Decoder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericReader.cs/#L448">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultReader_ReadMap_" data-uid="Avro.Generic.DefaultReader.ReadMap*"></a>
+  <h4 id="Avro_Generic_DefaultReader_ReadMap_System_Object_Avro_MapSchema_Avro_Schema_Avro_IO_Decoder_" data-uid="Avro.Generic.DefaultReader.ReadMap(System.Object,Avro.MapSchema,Avro.Schema,Avro.IO.Decoder)">ReadMap(Object, MapSchema, Schema, Decoder)</h4>
+  <div class="markdown level1 summary"><p>Deserialized an avro map. The default implemenation creats a new map using CreateMap() and then
+adds elements to the map using AddMapEntry().</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual object ReadMap(object reuse, MapSchema writerSchema, Schema readerSchema, Decoder d)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">reuse</span></td>
+        <td><p>If appropriate, use this instead of creating a new map object.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.MapSchema.html">MapSchema</a></td>
+        <td><span class="parametername">writerSchema</span></td>
+        <td><p>The schema the writer used to write the map.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.Schema.html">Schema</a></td>
+        <td><span class="parametername">readerSchema</span></td>
+        <td><p>The schema the reader is using.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.IO.Decoder.html">Decoder</a></td>
+        <td><span class="parametername">d</span></td>
+        <td><p>The decoder for serialization.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The deserialized map object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultReader_ReadNull_Avro_Schema_Avro_IO_Decoder_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultReader.ReadNull(Avro.Schema%2CAvro.IO.Decoder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericReader.cs/#L204">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultReader_ReadNull_" data-uid="Avro.Generic.DefaultReader.ReadNull*"></a>
+  <h4 id="Avro_Generic_DefaultReader_ReadNull_Avro_Schema_Avro_IO_Decoder_" data-uid="Avro.Generic.DefaultReader.ReadNull(Avro.Schema,Avro.IO.Decoder)">ReadNull(Schema, Decoder)</h4>
+  <div class="markdown level1 summary"><p>Deserializes a null from the stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual object ReadNull(Schema readerSchema, Decoder d)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.Schema.html">Schema</a></td>
+        <td><span class="parametername">readerSchema</span></td>
+        <td><p>Reader&apos;s schema, which should be a NullSchema</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.IO.Decoder.html">Decoder</a></td>
+        <td><span class="parametername">d</span></td>
+        <td><p>The decoder for deserialization</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultReader_ReadRecord_System_Object_Avro_RecordSchema_Avro_Schema_Avro_IO_Decoder_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultReader.ReadRecord(System.Object%2CAvro.RecordSchema%2CAvro.Schema%2CAvro.IO.Decoder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericReader.cs/#L231">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultReader_ReadRecord_" data-uid="Avro.Generic.DefaultReader.ReadRecord*"></a>
+  <h4 id="Avro_Generic_DefaultReader_ReadRecord_System_Object_Avro_RecordSchema_Avro_Schema_Avro_IO_Decoder_" data-uid="Avro.Generic.DefaultReader.ReadRecord(System.Object,Avro.RecordSchema,Avro.Schema,Avro.IO.Decoder)">ReadRecord(Object, RecordSchema, Schema, Decoder)</h4>
+  <div class="markdown level1 summary"><p>Deserializes a record from the stream.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual object ReadRecord(object reuse, RecordSchema writerSchema, Schema readerSchema, Decoder dec)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">reuse</span></td>
+        <td><p>If not null, a record object that could be reused for returning the result</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.RecordSchema.html">RecordSchema</a></td>
+        <td><span class="parametername">writerSchema</span></td>
+        <td><p>The writer&apos;s RecordSchema</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.Schema.html">Schema</a></td>
+        <td><span class="parametername">readerSchema</span></td>
+        <td><p>The reader&apos;s schema, must be RecordSchema too.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.IO.Decoder.html">Decoder</a></td>
+        <td><span class="parametername">dec</span></td>
+        <td><p>The decoder for deserialization</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The record object just read</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultReader_ReadUnion_System_Object_Avro_UnionSchema_Avro_Schema_Avro_IO_Decoder_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultReader.ReadUnion(System.Object%2CAvro.UnionSchema%2CAvro.Schema%2CAvro.IO.Decoder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericReader.cs/#L499">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultReader_ReadUnion_" data-uid="Avro.Generic.DefaultReader.ReadUnion*"></a>
+  <h4 id="Avro_Generic_DefaultReader_ReadUnion_System_Object_Avro_UnionSchema_Avro_Schema_Avro_IO_Decoder_" data-uid="Avro.Generic.DefaultReader.ReadUnion(System.Object,Avro.UnionSchema,Avro.Schema,Avro.IO.Decoder)">ReadUnion(Object, UnionSchema, Schema, Decoder)</h4>
+  <div class="markdown level1 summary"><p>Deserialized an object based on the writer&apos;s uninon schema.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual object ReadUnion(object reuse, UnionSchema writerSchema, Schema readerSchema, Decoder d)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">reuse</span></td>
+        <td><p>If appropriate, uses this object instead of creating a new one.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.UnionSchema.html">UnionSchema</a></td>
+        <td><span class="parametername">writerSchema</span></td>
+        <td><p>The UnionSchema that the writer used.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.Schema.html">Schema</a></td>
+        <td><span class="parametername">readerSchema</span></td>
+        <td><p>The schema the reader uses.</p>
+</td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.IO.Decoder.html">Decoder</a></td>
+        <td><span class="parametername">d</span></td>
+        <td><p>The decoder for serialization.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><p>The deserialized object.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultReader_ResizeArray_System_Object__System_Int32_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultReader.ResizeArray(System.Object%40%2CSystem.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericReader.cs/#L407">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultReader_ResizeArray_" data-uid="Avro.Generic.DefaultReader.ResizeArray*"></a>
+  <h4 id="Avro_Generic_DefaultReader_ResizeArray_System_Object__System_Int32_" data-uid="Avro.Generic.DefaultReader.ResizeArray(System.Object@,System.Int32)">ResizeArray(ref Object, Int32)</h4>
+  <div class="markdown level1 summary"><p>Resizes the array to the new value.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void ResizeArray(ref object array, int n)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">array</span></td>
+        <td><p>Array object whose size is required. This is guaranteed to be somthing returned by
+a previous call to CreateArray().</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">n</span></td>
+        <td><p>The new size.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultReader_SetArrayElement_System_Object_System_Int32_System_Object_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultReader.SetArrayElement(System.Object%2CSystem.Int32%2CSystem.Object)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericReader.cs/#L421">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultReader_SetArrayElement_" data-uid="Avro.Generic.DefaultReader.SetArrayElement*"></a>
+  <h4 id="Avro_Generic_DefaultReader_SetArrayElement_System_Object_System_Int32_System_Object_" data-uid="Avro.Generic.DefaultReader.SetArrayElement(System.Object,System.Int32,System.Object)">SetArrayElement(Object, Int32, Object)</h4>
+  <div class="markdown level1 summary"><p>Assigns a new value to the object at the given index</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void SetArrayElement(object array, int index, object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">array</span></td>
+        <td><p>Array object whose size is required. This is guaranteed to be somthing returned by
+a previous call to CreateArray().</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">index</span></td>
+        <td><p>The index to reassign to.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value to assign.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultReader_Skip_Avro_Schema_Avro_IO_Decoder_.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultReader.Skip(Avro.Schema%2CAvro.IO.Decoder)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericReader.cs/#L561">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultReader_Skip_" data-uid="Avro.Generic.DefaultReader.Skip*"></a>
+  <h4 id="Avro_Generic_DefaultReader_Skip_Avro_Schema_Avro_IO_Decoder_" data-uid="Avro.Generic.DefaultReader.Skip(Avro.Schema,Avro.IO.Decoder)">Skip(Schema, Decoder)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual void Skip(Schema writerSchema, Decoder d)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="Avro.Schema.html">Schema</a></td>
+        <td><span class="parametername">writerSchema</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="Avro.IO.Decoder.html">Decoder</a></td>
+        <td><span class="parametername">d</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultReader_TryGetField_System_Object_System_String_System_Int32_System_Object__.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultReader.TryGetField(System.Object%2CSystem.String%2CSystem.Int32%2CSystem.Object%40)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericReader.cs/#L299">View Source</a>
+  </span>
+  <a id="Avro_Generic_DefaultReader_TryGetField_" data-uid="Avro.Generic.DefaultReader.TryGetField*"></a>
+  <h4 id="Avro_Generic_DefaultReader_TryGetField_System_Object_System_String_System_Int32_System_Object__" data-uid="Avro.Generic.DefaultReader.TryGetField(System.Object,System.String,System.Int32,System.Object@)">TryGetField(Object, String, Int32, out Object)</h4>
+  <div class="markdown level1 summary"><p>Used by the default implementation of ReadRecord() to get the existing field of a record object. The derived
+classes can override this to make their own interpretation of the record object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected virtual bool TryGetField(object record, string fieldName, int fieldPos, out object value)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">record</span></td>
+        <td><p>The record object to be probed into. This is guaranteed to be one that was returned
+by a previous call to CreateRecord.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">fieldName</span></td>
+        <td><p>The name of the field to probe.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">fieldPos</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Object</span></td>
+        <td><span class="parametername">value</span></td>
+        <td><p>The value of the field, if found. Null otherwise.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Boolean</span></td>
+        <td><p>True if and only if a field with the given name is found.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/blachniet/avro/new/docs/apiSpec/new?filename=Avro_Generic_DefaultReader.md&amp;value=---%0Auid%3A%20Avro.Generic.DefaultReader%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/blachniet/avro/blob/docs/lang/csharp/src/apache/main/Generic/GenericReader.cs/#L81" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              <!-- <p><a class="back-to-top" href="#top">Back to top</a><p> -->
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Copyright © 2015-2017 Microsoft<br>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
