@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>blachniet.Avro</id>
+    <version>0.1.0</version>
+    <authors>The Apache Software Foundation</authors>
+    <owners>The Apache Software Foundation</owners>
+    <licenseUrl>https://github.com/blachniet/avro/blob/master/LICENSE.txt</licenseUrl>
+    <projectUrl>https://github.com/blachniet/avro</projectUrl>
+    <iconUrl>https://avro.apache.org/images/avro-logo.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>Apache Avro™ is a data serialization system. See http://avro.apache.org/ for more info. This release of the Avro library diverges from the official release with modifications by @blachniet.</description>
+    <summary>Apache Avro™ is a data serialization system. See http://avro.apache.org/ for more info. This release of the Avro library diverges from the official release with modifications by @blachniet.</summary>
+    <releaseNotes>https://github.com/blachniet/avro/releases/tag/blachniet.Avro-0.1.0</releaseNotes>
+    <copyright>Copyright 2013-2018 The Apache Software Foundation</copyright>
+    <tags>avro binary serialization</tags>
+    <dependencies>
+      <dependency id="Newtonsoft.Json" version="9.0.1" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="build/main/Release/Avro.dll" target="lib/net35" />
+    <file src="build/main/Release/Avro.xml" target="lib/net35" />
+    <file src="build/main/Release/Avro.pdb" target="lib/net35" />
+    <file src="src/**/*.cs" target="src" />
+  </files>
+</package>
