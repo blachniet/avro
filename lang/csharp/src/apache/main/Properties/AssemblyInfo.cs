@@ -20,11 +20,11 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 
 [assembly: AssemblyTitle("Avro")]
-[assembly: AssemblyDescription("")]
+[assembly: AssemblyDescription("Apache Avro™ is a data serialization system. See http://avro.apache.org/ for more info. This release of the Avro library diverges from the official release with modifications by @blachniet.")]
 [assembly: AssemblyConfiguration("")]
-[assembly: AssemblyCompany("Apache")]
+[assembly: AssemblyCompany("The Apache Software Foundation")]
 [assembly: AssemblyProduct("Avro")]
-[assembly: AssemblyCopyright("Copyright © Apache 2013")]
+[assembly: AssemblyCopyright("Copyright 2013-2018 The Apache Software Foundation")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 [assembly: ComVisible(false)]

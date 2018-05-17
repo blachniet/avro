@@ -1,4 +1,4 @@
-<!--
+﻿<!--
    Licensed to the Apache Software Foundation (ASF) under one or more
    contributor license agreements.  See the NOTICE file distributed with
    this work for additional information regarding copyright ownership.
@@ -24,6 +24,20 @@
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <SignAssembly>true</SignAssembly>
     <AssemblyOriginatorKeyFile>..\..\..\Avro.snk</AssemblyOriginatorKeyFile>
+    <PackageId>blachniet.Avro</PackageId>
+    <Version>0.1.1</Version>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>The Apache Software Foundation</Authors>
+    <PackageLicenseUrl>https://github.com/blachniet/avro/blob/master/LICENSE.txt</PackageLicenseUrl>
+    <PackageProjectUrl>https://github.com/blachniet/avro</PackageProjectUrl>
+    <PackageIconUrl>https://avro.apache.org/images/avro-logo.png</PackageIconUrl>
+    <RepositoryUrl></RepositoryUrl>
+    <RepositoryType />
+    <PackageTags>avro binary serialization</PackageTags>
+    <PackageReleaseNotes>https://github.com/blachniet/avro/releases/tag/blachniet.Avro-0.1.1</PackageReleaseNotes>
+    <IncludeSymbols>true</IncludeSymbols>
+    <IncludeSource>true</IncludeSource>
+    <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\Avro.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
