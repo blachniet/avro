@@ -1,4 +1,4 @@
-<!--
+﻿<!--
    Licensed to the Apache Software Foundation (ASF) under one or more
    contributor license agreements.  See the NOTICE file distributed with
    this work for additional information regarding copyright ownership.
@@ -17,32 +17,42 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net35;net40;netstandard2.0</TargetFrameworks>
-    <AssemblyName>Avro.msbuild</AssemblyName>
-    <RootNamespace>Avro.msbuild</RootNamespace>
-    <ProjectGuid>{AEB22F94-4ECF-4008-B159-389B3F05D54B}</ProjectGuid>
+    <TargetFrameworks>net35;net40</TargetFrameworks>
+    <RootNamespace>Avro.ipc.test</RootNamespace>
+    <AssemblyName>Avro.ipc.test</AssemblyName>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
   </PropertyGroup>
 
-  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
-    <PackageReference Include="Microsoft.Build.Framework" Version="15.6.82" />
-    <PackageReference Include="Microsoft.Build.Utilities.Core" Version="15.6.82" />
-  </ItemGroup>
-
-  <ItemGroup Condition="'$(TargetFramework)' == 'net35'">
-    <Reference Include="Microsoft.Build.Framework" />
-    <Reference Include="Microsoft.Build.Tasks.v3.5" />
-    <Reference Include="Microsoft.Build.Utilities.v3.5" />
-  </ItemGroup>
-
-  <ItemGroup Condition="'$(TargetFramework)' == 'net40'">
-    <Reference Include="Microsoft.Build.Framework" />
-    <Reference Include="Microsoft.Build.Tasks.v4.0" />
-    <Reference Include="Microsoft.Build.Utilities.v4.0" />
+  <ItemGroup>
+    <EmbeddedResource Include="..\..\..\..\..\share\test\schemas\mail.avpr">
+      <Link>mail.avpr</Link>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="nunit">
+      <Version>3.10.1</Version>
+    </PackageReference>
+    <PackageReference Include="nunit3testadapter">
+      <Version>3.10.0</Version>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)'!='netcoreapp2.0'">
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.6.1" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)'=='netcoreapp2.0'">
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ipc\Avro.ipc.csproj" />
     <ProjectReference Include="..\main\Avro.main.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Service Include="{82a7f48d-3b50-4b1e-b82e-3ada8210c358}" />
   </ItemGroup>
 
 </Project>
