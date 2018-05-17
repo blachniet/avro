@@ -24,7 +24,7 @@
 
 The table below shows the frameworks that the various projects target.
 
-Project       | Type         | .NET Standard 2.0  | .NET Core 2.0      | .NET Framework 3.5 | .NET Framework 4.0
+Project       | Type         | .NET Standard 2.0  | .NET Core 2.0      | .NET Framework 4.5 | .NET Framework 4.6
 ------------  | ------------ |:------------------:|:------------------:|:------------------:|:------------------:
 Avro.codegen  | Exe          |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:
 Avro.ipc      | Library      |                    |                    | :heavy_check_mark: | :heavy_check_mark:
