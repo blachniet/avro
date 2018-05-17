@@ -1,4 +1,4 @@
-﻿<!--
+<!--
    Licensed to the Apache Software Foundation (ASF) under one or more
    contributor license agreements.  See the NOTICE file distributed with
    this work for additional information regarding copyright ownership.
@@ -35,6 +35,8 @@
     <RepositoryType />
     <PackageTags>avro binary serialization</PackageTags>
     <PackageReleaseNotes>https://github.com/blachniet/avro/releases/tag/blachniet.Avro-0.2.0</PackageReleaseNotes>
+    <Description>Apache Avro™ is a data serialization system. See http://avro.apache.org/ for more info. This release of the Avro library diverges from the official release with modifications by @blachniet.</Description>
+    <Copyright>Copyright 2013-2018 The Apache Software Foundation</Copyright>
     <IncludeSymbols>true</IncludeSymbols>
     <IncludeSource>true</IncludeSource>
     <DocumentationFile>bin\$(Configuration)\$(TargetFramework)\Avro.xml</DocumentationFile>
