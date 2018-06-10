@@ -1,5 +1,9 @@
 # Avro C#
 
+[![Build status](https://ci.appveyor.com/api/projects/status/an8j7urwwx6pap0f?svg=true)](https://ci.appveyor.com/project/blachniet/avro)
+[![NuGet](https://img.shields.io/nuget/v/blachniet.Avro.svg)](https://www.nuget.org/packages/blachniet.Avro/)
+
+
 ## Build & Test
 
 ### Windows
