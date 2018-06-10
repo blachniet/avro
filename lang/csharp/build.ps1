@@ -1,6 +1,6 @@
 param(
 	[Parameter(Position=0)]
-	[ValidateSet("Default")]
+	[ValidateSet("Default","Build")]
 	[string]
 	$Target = "Default",
 
