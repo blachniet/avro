@@ -28,14 +28,13 @@
 
 These are instructions for releasing the NuGet packages.
 
-1. Update the `<Version>` in [`Avro.main.csproj`](src/apache/main/Avro.main.csproj) following the
+1. Update the `<VersionPrefix>` in [`Avro.main.csproj`](src/apache/main/Avro.main.csproj) following the
    rules defined in [Semantic Versioning](https://semver.org/)
-2. Update the `<PackageReleaseNotes>` in [`Avro.main.csproj`](src/apache/main/Avro.main.csproj)
-3. Commit and tag with `blachniet.Avro-<versionNumber>`
-4. `dotnet build -c Release`
-5. [Create GitHub release from tag](https://github.com/blachniet/avro/releases), document changes
+2. Commit and tag with `blachniet.Avro-<versionNumber>`
+3. `./build.ps1`
+4. [Create GitHub release from tag](https://github.com/blachniet/avro/releases), document changes
    and upload NuGet packages (symbols package and standard package)
-6. [Upload non-symbols NuGet package to NuGet.org.](https://www.nuget.org/packages/manage/upload)
+5. [Upload non-symbols NuGet package to NuGet.org.](https://www.nuget.org/packages/manage/upload)
 
 ## Target Frameworks
 

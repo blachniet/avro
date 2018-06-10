@@ -7,7 +7,12 @@ param(
 	[Parameter()]
 	[ValidateSet("Release","Debug")]
 	[string]
-	$Configuration = "Release"
+	$Configuration = "Release",
+
+	[Parameter()]
+	[ValidateNotNullOrEmpty()]
+	[string]
+	$VersionSuffix
 )
 
 $ErrorActionPreference = 'Stop'
@@ -31,7 +36,11 @@ function Clean {
 function Build {
 	Clean
 
-	& dotnet build --configuration $Configuration
+	if ($VersionSuffix) {
+		& dotnet build --configuration="$Configuration" --version-suffix="$VersionSuffix"
+	} else {
+		& dotnet build --configuration="$Configuration"
+	}
 	CheckExitCode
 }
 
@@ -40,7 +49,7 @@ function Test {
 
 	Get-ChildItem ".\src\apache\*test" | Foreach-Object {
 		Push-Location $_.FullName
-		& dotnet test --configuration $Configuration
+		& dotnet test --configuration="$Configuration"
 		Pop-Location
 		CheckExitCode
 	}
