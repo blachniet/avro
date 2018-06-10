@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -96,8 +96,10 @@ namespace Avro.Specific
 
         protected override void WriteFixed(FixedSchema schema, object value, Encoder encoder)
         {
-            var fixedrec = value as SpecificFixed;
-            if (fixedrec == null)
+            if (value == null)
+                throw new ArgumentNullException(nameof(value));
+
+            if (!(value is SpecificFixed fixedrec))
                 throw new AvroTypeException("Fixed object is not derived from SpecificFixed");
 
             encoder.WriteFixed(fixedrec.Value);
