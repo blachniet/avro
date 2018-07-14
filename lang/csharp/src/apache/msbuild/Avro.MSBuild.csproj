@@ -24,7 +24,7 @@
   -->
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFrameworks>net45;netstandard2.0</TargetFrameworks>
   </PropertyGroup>
 
   <!-- NuGet -->
@@ -45,17 +45,33 @@
       <PackagePath>build\</PackagePath>
     </Content>
 
-    <!-- Include the Avro dll in the NuGet package -->
-    <Content Include="$(OutputPath)\Avro.dll;$(OutputPath)\System.CodeDom.dll">
+    <Content Include="buildMultiTargeting\*.props">
       <Pack>true</Pack>
-      <PackagePath>tools\$(TargetFramework)</PackagePath>
+      <PackagePath>buildMultiTargeting\</PackagePath>
     </Content>
-    <Content Include="build\Avro.MSBuild.props" />
+
+    <Content Include="$(OutputPath)net45\Avro.dll">
+      <Pack>true</Pack>
+      <PackagePath>tools\net45</PackagePath>
+    </Content>
+
+    <Content Include="$(OutputPath)netstandard2.0\Avro.dll;$(OutputPath)netstandard2.0\System.CodeDom.dll">
+      <Pack>true</Pack>
+      <PackagePath>tools\netstandard2.0</PackagePath>
+    </Content>
+
   </ItemGroup>
 
-  <ItemGroup>
-    <PackageReference Include="Microsoft.Build.Framework" Version="15.6.82" PrivateAssets="all" />
-    <PackageReference Include="Microsoft.Build.Utilities.Core" Version="15.6.82" PrivateAssets="all" />
+  <ItemGroup Condition="'$(TargetFramework)' == 'netstandard2.0'">
+    <PackageReference Include="Microsoft.Build.Framework" Version="15.6.82" />
+    <PackageReference Include="Microsoft.Build.Utilities.Core" Version="15.6.82" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net45' OR '$(TargetFramework)' == 'net46'">
+    <Reference Include="Microsoft.Build.Framework" />
+    <Reference Include="Microsoft.Build.Tasks.v4.0" />
+    <Reference Include="Microsoft.Build.Utilities.v4.0" />
+
   </ItemGroup>
 
   <ItemGroup>
