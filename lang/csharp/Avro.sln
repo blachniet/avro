@@ -14,7 +14,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Avro.ipc", "src\apache\ipc\
 		{AEB22F94-4ECF-4008-B159-389B3F05D54B} = {AEB22F94-4ECF-4008-B159-389B3F05D54B}
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Avro.msbuild", "src\apache\msbuild\Avro.msbuild.csproj", "{AEB22F94-4ECF-4008-B159-389B3F05D54B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Avro.MSBuild", "src\apache\msbuild\Avro.MSBuild.csproj", "{AEB22F94-4ECF-4008-B159-389B3F05D54B}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Avro.perf", "src\apache\perf\Avro.perf.csproj", "{AC4E1909-2594-4D01-9B2B-B832C07BAFE5}"
 EndProject

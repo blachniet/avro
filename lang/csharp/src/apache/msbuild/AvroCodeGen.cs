@@ -1,4 +1,4 @@
-﻿/**
+/**
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
  * distributed with this work for additional information
@@ -19,13 +19,21 @@
 using Microsoft.Build.Framework;
 using Microsoft.Build.Utilities;
 
-namespace Avro.msbuild
+namespace Avro.MSBuild
 {
-    public class AvroBuildTask : Task
+    public class AvroCodeGen : Task
     {
+        public ITaskItem[] SchemaFiles { get; set; }
+
+        public ITaskItem[] ProtocolFiles { get; set; }
+
+        [Required]
+        public ITaskItem OutDir { get; set; }
+
         public override bool Execute()
         {
             var codegen = new CodeGen();
+
             if (SchemaFiles != null)
             {
                 foreach (var schemaFile in SchemaFiles)
@@ -34,6 +42,7 @@ namespace Avro.msbuild
                     codegen.AddSchema(schema);
                 }
             }
+
             if (ProtocolFiles != null)
             {
                 foreach (var protocolFile in ProtocolFiles)
@@ -57,11 +66,5 @@ namespace Avro.msbuild
             codegen.WriteTypes(OutDir.ItemSpec);
             return true;
         }
-
-        public ITaskItem[] SchemaFiles { get; set; }
-        public ITaskItem[] ProtocolFiles { get; set; }
-
-        [Required]
-        public ITaskItem OutDir { get; set; }
     }
 }
