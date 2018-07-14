@@ -34,11 +34,11 @@
     <PackageReference Include="nunit3testadapter" Version="3.10.0" />
   </ItemGroup>
 
-  <ItemGroup Condition="'$(TargetFramework)'!='netcoreapp2.0'">
+  <ItemGroup Condition="'$(TargetFramework)'!='netcoreapp2.1'">
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.6.1" />
   </ItemGroup>
 
-  <ItemGroup Condition="'$(TargetFramework)'=='netcoreapp2.0'">
+  <ItemGroup Condition="'$(TargetFramework)'=='netcoreapp2.1'">
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0" />
   </ItemGroup>
 

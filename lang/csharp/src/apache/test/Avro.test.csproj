@@ -17,7 +17,7 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net45;net46;netcoreapp2.0</TargetFrameworks>
+    <TargetFrameworks>net45;net46;netcoreapp2.1</TargetFrameworks>
     <RootNamespace>Avro.test</RootNamespace>
     <AssemblyName>Avro.test</AssemblyName>
     <ProjectGuid>{911D56AB-587B-4E5F-B5EA-D47D8A46F1FA}</ProjectGuid>
@@ -29,11 +29,11 @@
     <PackageReference Include="nunit3testadapter" Version="3.10.0" />
   </ItemGroup>
 
-  <ItemGroup Condition="'$(TargetFramework)'!='netcoreapp2.0'">
+  <ItemGroup Condition="'$(TargetFramework)'!='netcoreapp2.1'">
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.6.1" />
   </ItemGroup>
 
-  <ItemGroup Condition="'$(TargetFramework)'=='netcoreapp2.0'">
+  <ItemGroup Condition="'$(TargetFramework)'=='netcoreapp2.1'">
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="15.3.0" />
   </ItemGroup>
 

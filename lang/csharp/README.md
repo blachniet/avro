@@ -21,7 +21,7 @@
 2. Build and run unit tests:
     ```
     cd src/apache/test
-    dotnet test --framework netcoreapp2.0
+    dotnet test --framework netcoreapp2.1
     ```
 
 ## Release
