@@ -46,7 +46,7 @@ Avro.codegen  | Exe          |                    | :heavy_check_mark: | :heavy_
 Avro.ipc      | Library      |                    |                    | :heavy_check_mark: | :heavy_check_mark:
 Avro.ipc.test | Unit Tests   |                    |                    | :heavy_check_mark: | :heavy_check_mark:
 Avro.main     | Exe          | :heavy_check_mark: |                    | :heavy_check_mark: | :heavy_check_mark:
-Avro.msbuild  | Library      | :heavy_check_mark: |                    | :heavy_check_mark: | :heavy_check_mark:
+Avro.MSBuild  | Library      | :heavy_check_mark: |                    |                    |
 Avro.perf     | Exe          |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:
 Avro.test     | Unit Tests   |                    | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark:
 
