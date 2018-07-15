@@ -50,12 +50,12 @@
       <PackagePath>buildMultiTargeting\</PackagePath>
     </Content>
 
-    <Content Include="$(OutputPath)net45\Avro.dll">
+    <Content Include="bin\$(Configuration)\net45\Avro.dll;bin\$(Configuration)\net45\Newtonsoft.Json.dll">
       <Pack>true</Pack>
       <PackagePath>tools\net45</PackagePath>
     </Content>
 
-    <Content Include="$(OutputPath)netstandard2.0\Avro.dll;$(OutputPath)netstandard2.0\System.CodeDom.dll">
+    <Content Include="bin\$(Configuration)\netstandard2.0\Avro.dll;bin\$(Configuration)\netstandard2.0\Newtonsoft.Json.dll;bin\$(Configuration)\netstandard2.0\System.CodeDom.dll">
       <Pack>true</Pack>
       <PackagePath>tools\netstandard2.0</PackagePath>
     </Content>
@@ -67,7 +67,7 @@
     <PackageReference Include="Microsoft.Build.Utilities.Core" Version="15.6.82" />
   </ItemGroup>
 
-  <ItemGroup Condition="'$(TargetFramework)' == 'net45' OR '$(TargetFramework)' == 'net46'">
+  <ItemGroup Condition="'$(TargetFramework)' == 'net45'">
     <Reference Include="Microsoft.Build.Framework" />
     <Reference Include="Microsoft.Build.Tasks.v4.0" />
     <Reference Include="Microsoft.Build.Utilities.v4.0" />
