@@ -23,13 +23,7 @@ case "$TRAVIS_OS_NAME" in
     sudo apt-get -q install --no-install-recommends -y curl git gnupg-agent locales pinentry-curses pkg-config rsync software-properties-common
     sudo apt-get -q clean
     sudo rm -rf /var/lib/apt/lists/*
-
-    # Only Yetus 0.9.0+ supports `ADD` and `COPY` commands in Dockerfile
-    curl -L https://www-us.apache.org/dist/yetus/0.10.0/apache-yetus-0.10.0-bin.tar.gz | tar xvz -C /tmp/
-    # A dirty workaround to disable the Yetus robot for TravisCI,
-    # since it'll cancel the changes that .travis/script.sh will do,
-    # even if the `--dirty-workspace` option is specified.
-    rm /tmp/apache-yetus-0.10.0/lib/precommit/robots.d/travisci.sh
+    curl -L https://www-us.apache.org/dist/yetus/0.11.0/yetus-0.11.0-bin.tar.gz | tar xvz -C /tmp/
     ;;
 "windows")
     choco install dotnetcore-sdk --version 2.2.300
