@@ -20,7 +20,16 @@ set -e
 case "$TRAVIS_OS_NAME" in
 "linux")
     sed -i.bak "s/openjdk:8/openjdk:${JAVA}/" share/docker/Dockerfile
-    /tmp/apache-yetus-0.11.0/bin/test-patch --plugins=buildtest --java-home=/usr/local/openjdk-"${JAVA}" --user-plugins=share/precommit/ --run-tests --empty-patch --docker --dockerfile=share/docker/Dockerfile --dirty-workspace --verbose=true
+    "/tmp/apache-yetus-${YETUS_RELEASE}/bin/test-patch"
+        --plugins=buildtest
+        --java-home=/usr/local/openjdk-"${JAVA}"
+        --user-plugins=share/precommit/
+        --run-tests
+        --empty-patch
+        --docker
+        --dockerfile=share/docker/Dockerfile
+        --dirty-workspace
+        --verbose=true
     ;;
 "windows")
     ./lang/csharp/build.sh test

@@ -22,6 +22,9 @@ sudo: required
 services:
   - docker
 
+env:
+  YETUS_RELEASE=0.11.0
+
 matrix:
   include:
   - language: generic
