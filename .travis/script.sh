@@ -29,7 +29,6 @@ case "$TRAVIS_OS_NAME" in
         --docker
         --dockerfile=share/docker/Dockerfile
         --dirty-workspace
-        --verbose=true
     ;;
 "windows")
     ./lang/csharp/build.sh test
