@@ -23,7 +23,7 @@ case "$TRAVIS_OS_NAME" in
     sudo apt-get -q install --no-install-recommends -y curl git gnupg-agent locales pinentry-curses pkg-config rsync software-properties-common
     sudo apt-get -q clean
     sudo rm -rf /var/lib/apt/lists/*
-    curl -L https://www-us.apache.org/dist/yetus/0.11.0/yetus-0.11.0-bin.tar.gz | tar xvz -C /tmp/
+    curl -L https://www-us.apache.org/dist/yetus/0.11.0/apache-yetus-0.11.0-bin.tar.gz | tar xvz -C /tmp/
     ;;
 "windows")
     choco install dotnetcore-sdk --version 2.2.300
