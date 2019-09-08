@@ -25,6 +25,7 @@ case "$TRAVIS_OS_NAME" in
     sudo apt-get -q clean
     sudo rm -rf /var/lib/apt/lists/*
 
+    mkdir -p "/tmp/downloads-yetus"
     ".travis/cache-apache-project-artifact.sh" \
         --working-dir "/tmp/downloads-yetus" \
         --keys 'https://www.apache.org/dist/yetus/KEYS' \
