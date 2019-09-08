@@ -38,7 +38,7 @@ case "$TRAVIS_OS_NAME" in
     ".travis/cache-apache-project-artifact.sh" \
         --working-dir "/tmp/downloads-yetus" \
         --keys 'https://www.apache.org/dist/yetus/KEYS' \
-        "/tmp/yetus-${YETUS_RELEASE}-bin.tar.gz" \
+        "/tmp/apache-yetus-${YETUS_RELEASE}-bin.tar.gz" \
         "yetus/${YETUS_RELEASE}/apache-yetus-${YETUS_RELEASE}-bin.tar.gz"
 
     tar -xvzf "/tmp/apache-yetus-${YETUS_RELEASE}-bin.tar.gz" -C /tmp/
