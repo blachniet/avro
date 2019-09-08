@@ -21,7 +21,16 @@ set -e
 case "$TRAVIS_OS_NAME" in
 "linux")
     sudo apt-get -q update
-    sudo apt-get -q install --no-install-recommends -y curl git gnupg-agent locales pinentry-curses pkg-config rsync software-properties-common
+    sudo apt-get -q install --no-install-recommends -y \
+      curl \
+      git \
+      gnupg-agent \
+      gpgconf \
+      locales \
+      pinentry-curses \
+      pkg-config \
+      rsync \
+      software-properties-common
     sudo apt-get -q clean
     sudo rm -rf /var/lib/apt/lists/*
 
