@@ -24,6 +24,7 @@ case "$TRAVIS_OS_NAME" in
     sudo apt-get -q install --no-install-recommends -y \
       curl \
       git \
+      gnupg \
       gnupg-agent \
       locales \
       pinentry-curses \
