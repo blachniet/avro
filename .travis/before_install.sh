@@ -25,7 +25,6 @@ case "$TRAVIS_OS_NAME" in
       curl \
       git \
       gnupg-agent \
-      gpgconf \
       locales \
       pinentry-curses \
       pkg-config \
