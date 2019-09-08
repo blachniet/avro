@@ -22,18 +22,17 @@ sudo: required
 services:
   - docker
 
-env:
-  YETUS_RELEASE=0.11.0
-
 matrix:
   include:
   - language: generic
     env:
-      JAVA=8
+    - JAVA=8
+    - YETUS_RELEASE=0.11.0
 
   - language: generic
     env:
-      JAVA=11
+    - JAVA=11
+    - YETUS_RELEASE=0.11.0
 
   - os: windows
     language: bash
