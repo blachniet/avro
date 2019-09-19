@@ -80,7 +80,7 @@ fi
 function cleanup {
   if [ -n "${keys}" ]; then
     echo "Stopping gpg agent daemon"
-    gpgconf --homedir "${working_dir}/.gpg" --kill gpg-agent
+    GNUPGHOME="${working_dir}/.gpg" gpgconf --kill gpg-agent
     echo "Stopped gpg agent daemon"
   fi
 
