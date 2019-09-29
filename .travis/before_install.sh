@@ -21,12 +21,17 @@ case "$TRAVIS_OS_NAME" in
 "linux")
     mkdir -p "/tmp/downloads-yetus"
     ".travis/cache-apache-project-artifact.sh" \
-      --working-dir "/tmp/downloads-yetus" \
-      --keys 'https://www.apache.org/dist/yetus/KEYS' \
-      "/tmp/apache-yetus-${YETUS_RELEASE}-bin.tar.gz" \
-      "yetus/${YETUS_RELEASE}/apache-yetus-${YETUS_RELEASE}-bin.tar.gz"
+        --working-dir "/tmp/downloads-yetus" \
+        --keys 'https://www.apache.org/dist/yetus/KEYS' \
+        "/tmp/apache-yetus-${YETUS_RELEASE}-bin.tar.gz" \
+        "yetus/${YETUS_RELEASE}/apache-yetus-${YETUS_RELEASE}-bin.tar.gz"
 
     tar -xvzf "/tmp/apache-yetus-${YETUS_RELEASE}-bin.tar.gz" -C /tmp/
+
+    # A dirty workaround to disable the Yetus robot for TravisCI,
+    # since it'll cancel the changes that .travis/script.sh will do,
+    # even if the `--dirty-workspace` option is specified.
+    rm "/tmp/apache-yetus-${YETUS_RELEASE}/lib/precommit/robots.d/travisci.sh"
     ;;
 "windows")
     choco install dotnetcore-sdk --version 2.2.300
