@@ -19,10 +19,10 @@ set -e
 
 case "$TRAVIS_OS_NAME" in
 "linux")
-    sudo apt-get -q update
-    sudo apt-get -q install --no-install-recommends -y curl git gnupg-agent locales pinentry-curses pkg-config rsync software-properties-common
-    sudo apt-get -q clean
-    sudo rm -rf /var/lib/apt/lists/*
+    # sudo apt-get -q update
+    # sudo apt-get -q install --no-install-recommends -y curl git gnupg-agent locales pinentry-curses pkg-config rsync software-properties-common
+    # sudo apt-get -q clean
+    # sudo rm -rf /var/lib/apt/lists/*
 
     # Only Yetus 0.9.0+ supports `ADD` and `COPY` commands in Dockerfile
     curl -L https://www-us.apache.org/dist/yetus/0.10.0/apache-yetus-0.10.0-bin.tar.gz | tar xvz -C /tmp/
